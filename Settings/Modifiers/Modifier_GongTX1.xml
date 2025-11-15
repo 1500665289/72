@@ -1,0 +1,463 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModifierDefs>
+  <List>
+    <!--基础功法-->
+    <Modifier Name="Modifier_Esoterica_TX01" Type="Normal">
+      <DisplayName>太虚剑法</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <BaseFive>0,1,0,0,0</BaseFive>
+      <Skills>
+        <li Name="Fight" Level="5" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TX02" Type="Normal">
+      <DisplayName>阴阳观</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="ComfyTMin" AddV="-20" />
+        <li Name="ToleranceTMin" AddV="-20" />
+        <li Name="ComfyTMax" AddV="80" />
+        <li Name="ToleranceTMax" AddV="80" />
+        <li Name="BaseEmotionAddV" AddV="20" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TX03" Type="Normal">
+      <DisplayName>阴阳调息法</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="MindStateBaseValue" AddV="5" />
+        <li Name="NutritionToJingYuanK" AddV="0.0025" />
+        <li Name="NpcLingMaxValue" AddP="1.5" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TX04" Type="Normal">
+      <DisplayName>凝阴法</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="ComfyTMax" AddV="150" />
+        <li Name="ToleranceTMax" AddV="150" />
+      </Properties>
+      <BaseFive>0,0,0,1,0</BaseFive>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TX05" Type="Normal">
+      <DisplayName>聚阳法</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="ComfyTMin" AddV="-50" />
+        <li Name="ToleranceTMin" AddV="-50" />
+      </Properties>
+      <BaseFive>1,0,0,0,0</BaseFive>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TX06" Type="Normal">
+      <DisplayName>阴阳冲虚灵法</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="LingAbsorbSpeed" AddP="10" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TX07" Type="Normal">
+      <DisplayName>五行转阴阳</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcLingMaxValue" AddP="3" />
+        <li Name="NpcFight_ShieldResistanceToJin" AddV="0.05" />
+        <li Name="NpcFight_ShieldResistanceToMu" AddV="0.05"></li>
+        <li Name="NpcFight_ShieldResistanceToShui" AddV="0.05" />
+        <li Name="NpcFight_ShieldResistanceToHuo" AddV="0.05" />
+        <li Name="NpcFight_ShieldResistanceToTu" AddV="0.05" />
+      </Properties>
+      <Skills>
+        <li Name="Qi" Level="5" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TX08" Type="Normal">
+      <DisplayName>天火四象吉人经</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcLingMaxValue" AddP="35" />
+      </Properties>
+      <Skills>
+        <li Name="SocialContact" Level="10" />
+      </Skills>
+      <BaseFive>0,0,0,0,3</BaseFive>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TX09" Type="Normal">
+      <DisplayName>玄武归心</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_ShieldConversionRate" AddV="0.5" />
+      </Properties>
+      <Skills>
+        <li Name="Barrier" LevelOver="3" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TX10" Type="Normal">
+      <DisplayName>天极地极人极</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="AbilityLvAddV" AddV="-20" />
+        <li Name="NpcLingMaxValue" AddP="25" />
+        <li Name="MaxAge" AddV="300" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TX11" Type="Normal">
+      <DisplayName>九阴九阳神功</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="IntelligenceSkillEXPConstant" AddP="1" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="1" />
+        <li Name="AgeCostSpeed" AddP="-0.25" />
+        <li Name="NpcLingMaxValue" BAddP="0.5" />
+      </Properties>
+    </Modifier>
+    <!--御剑相关-->
+    <Modifier Name="Modifier_Esoterica_TXYujian01" Type="Normal">
+      <DisplayName>奔流御剑术</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoLingRecoverK" AddV="0.5" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXYujian02" Type="Normal">
+      <DisplayName>剑意-狂龙绝啸</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoPowerAddP" AddP="3" />
+        <li Name="NpcFight_FabaoRepelDistanceAddV" AddV="1" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXYujian03" Type="Normal">
+      <DisplayName>剑意-影龙崩心</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoPowerAddP" AddP="3" />
+        <li Name="NpcFight_FabaoRepelResistanceAddV" AddV="0.5" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXYujian04" Type="Normal">
+      <DisplayName>剑意-青龙掣电</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoPowerAddP" AddP="3" />
+        <li Name="NpcFight_FabaoFlySpeedAddP" AddV="0.5" />
+        <li Name="NpcFight_FabaoTrailingLengthAddP" AddV="3" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXYujian05" Type="Normal">
+      <DisplayName>剑意-白虎驱雷</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoPowerAddP" AddP="3" />
+        <li Name="NpcFight_FabaoTurnSpeedAddP" AddV="0.5" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXYujian06" Type="Normal">
+      <DisplayName>剑意-千龙破天</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoPowerAddP" AddP="3" />
+        <li Name="NpcFight_FabaoLingRecoverAddP" AddP="6" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXYujian07" Type="Normal">
+      <DisplayName>太极剑意</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoPowerAddP" AddP="15" />
+        <li Name="NpcFight_FabaoLingRecoverAddP" AddP="30" />
+        <li Name="NpcFight_FabaoMaxLingAddP" AddP="30" />
+        <li Name="NpcFight_FabaoFlySpeedAddP" AddV="0.5" />
+        <li Name="NpcFight_FabaoTurnSpeedAddP" AddV="0.5" />
+        <li Name="NpcFight_FabaoTrailingLengthAddP" AddV="2" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXYujian08" Type="Normal">
+      <DisplayName>战之意</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoPowerAddP" BAddP="0.2" />
+      </Properties>
+      <Skills>
+        <li Name="Fight" LevelOver="1" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXYujian09" Type="Normal">
+      <DisplayName>杀之意</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoPowerAddP" BAddP="0.4" />
+      </Properties>
+      <Skills>
+        <li Name="Fight" LevelOver="3" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXYujian10" Type="Normal">
+      <DisplayName>诛之意</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoPowerAddP" BAddP="0.6" />
+      </Properties>
+      <Skills>
+        <li Name="Fight" LevelOver="5" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXYujian11" Type="Normal">
+      <DisplayName>无极归一剑诀</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoNum" AddV="1" />
+      </Properties>
+      <Skills>
+        <li Name="Fabao" LevelOver="5" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXGod02" Type="Normal">
+      <DisplayName>人剑合一</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoPowerAddP" BAddP="0.4" />
+        <li Name="NpcFight_FabaoLingRecoverK" AddV="4.5" />
+      </Properties>
+    </Modifier>
+    <!--术法相关-->
+    <Modifier Name="Modifier_Esoterica_TXSP04" Type="Normal">
+      <DisplayName>阴阳聚灵术</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_SpellPowerAddP" AddP="10" />
+        <li Name="NpcFight_SpellLingCostAddP" AddP="10" />
+        <li Name="NpcLingMaxValue" AddV="1000" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXFashu01" Type="Normal">
+      <DisplayName>火风鼎</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_SpellPowerAddP" AddP="20"></li>
+        <li Name="NpcFight_SpellLingCostAddP" AddP="20" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXFashu02" Type="Normal">
+      <DisplayName>泽水困</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_SpellLingCostAddP" AddP="-15" />
+        <li Name="NpcFight_SpellCoolDownAddP" AddP="-0.15" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXFashu03" Type="Normal">
+      <DisplayName>天雷无妄</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_SpellPowerAddP" AddP="25" />
+        <li Name="NpcFight_SpellLingCostAddP" AddP="25" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXFashu04" Type="Normal">
+      <DisplayName>神灭斩</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_SpellPowerAddP" AddP="50" />
+        <li Name="NpcFight_SpellLingCostAddP" AddP="50" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXFashu04" Type="Normal">
+      <DisplayName>朱雀踏岚</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_SpellLingCostAddP" AddP="-30" />
+        <li Name="NpcFight_SpellCoolDownAddP" AddP="-0.35" />
+      </Properties>
+    </Modifier>
+    <!--炼丹相关-->
+    <Modifier Name="Modifier_Esoterica_TXDan01" Type="Normal">
+      <DisplayName>解离阴阳炼丹法</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <Properties>
+          <li Name="DanMake_SuccessRateAddV" AddV="0.3" />
+        </Properties>
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXDan02" Type="Normal">
+      <DisplayName>阴阳冲虚速练法</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="DanMake_SpeedAddV" AddV="1.25" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXDan04" Type="Normal">
+      <DisplayName>丹羽化火诀</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="DanMake_YieldAddP" AddV="0.7"></li>
+        <li Name="DanMake_SuccessRateAddV" AddV="0.7" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXDan05" Type="Normal">
+      <DisplayName>无极天尊炼丹经</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Skills>
+        <li Name="Medicine" LevelOver="10" />
+      </Skills>
+    </Modifier>
+    <!--炼器相关-->
+    <Modifier Name="Modifier_Esoterica_TXJian01" Type="Normal">
+      <DisplayName>太虚门工匠集录</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="FabaoMake_SuccessRateAddV" AddV="0.15" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXJian03" Type="Normal">
+      <DisplayName>凝阴聚阳造物书</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="FabaoMake_SuccessRateAddV" AddV="0.3" />
+        <li Name="FabaoMake_LingInheritRateAddV" AddV="1" />
+        <li Name="FabaoMake_QualityAddV" AddV="0.2" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXJian04" Type="Normal">
+      <DisplayName>太虚铸剑集录</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="FabaoMake_SuccessRateAddV" AddV="0.6" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXJian05" Type="Normal">
+      <DisplayName>两仪分天地</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="FabaoMake_LingInheritRateAddV" AddV="2" />
+        <li Name="FabaoMake_SpeedAddV" AddV="1" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXJian06" Type="Normal">
+      <DisplayName>离火定太极</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="FabaoMake_TwelveRateChance" AddP="10" />
+      </Properties>
+      <Skills>
+        <li Name="Manual" LevelOver="10" />
+      </Skills>
+    </Modifier>
+    <!--无极真法-->
+    <Modifier Name="Modifier_Esoterica_TXGod01" Type="Normal">
+      <DisplayName>无极乾坤真解</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_SpellLingCostAddP" AddP="-40" />
+        <li Name="LingAbsorbSpeed" AddP="66" />
+        <li Name="NpcLingMaxValue" BAddP="1" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Esoterica_TXGod06" Type="Normal">
+      <DisplayName>太虚无极剑仙</DisplayName>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <BaseFive>5,5,5,5,5</BaseFive>
+      <Properties>
+        <li Name="GodPenaltyAddV" AddV="333" />
+        <li Name="NpcFight_ShieldConversionRate" AddV="1" />
+        <li Name="NpcLingMaxValue" AddP="33" />
+        <li Name="NpcFight_SpellPowerAddP" AddP="30" />
+        <li Name="NpcFight_SpellLingCostAddP" AddP="30" />
+        <li Name="DanMake_YieldAddP" AddV="1"></li>
+        <li Name="FabaoMake_TwelveRateChance" AddP="5" />
+        <li Name="FabaoMake_SpeedAddV" AddV="1" />
+        <li Name="NpcFight_FabaoPowerAddP" BAddP="0.33" />
+        <li Name="NpcFight_FabaoNum" AddV="1" />
+      </Properties>
+      <Skills>
+        <li Name="Manual" LevelOver="5" />
+        <li Name="Medicine" LevelOver="5" />
+        <li Name="FightSkill" LevelOver="5" />
+        <li Name="Fabao" LevelOver="5" />
+        <li Name="Barrier" LevelOver="5" />
+        <li Name="Fight" LevelOver="5" />
+        <li Name="Zhen" LevelOver="5" />
+      </Skills>
+    </Modifier>
+  </List>
+</ModifierDefs>

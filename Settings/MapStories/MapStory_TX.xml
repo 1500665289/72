@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Stories>
+  <List>
+    <Story Name="Secrets_TX0" Parent="BaseFillingStory">
+      <DisplayName>山中神剑</DisplayName>
+      <Desc>这就是传闻中的神剑了，在这个灵脉洞穴中你见到了许多门派的大能，甚至还有一些非常年长的修行者。这把宝剑的身份绝非一般，想必是上古之神物。并且无一例外，在场的人都非常擅长御剑。</Desc>
+      <Selections>
+        <li>
+          <Display>靠近观察</Display>
+          <Condition>	
+				me:GetSkillLevel("Fabao") &gt;= 28
+				</Condition>
+          <Tip>御器</Tip>
+          <OKResult>me:AddMsg(XT("[NAME]走到了法阵前，寻找破解阵法的方法。"));me:AddMsg(XT("[NAME]刚走到了法阵前，看向那柄神剑。[NAME]突然感觉到巨大的心神冲击，你恍惚听到有人在说”吾乃太虚剑仙的无极神剑，[NAME]你便是我在等的传人，你的剑法才配得上我。”随后这把神剑自动飞到了你的手上。在场的众人皆惊叹不已。"));me:DropAwardItem("TX_Sword0",1,"Item_WujinHeart", -1,1);me:UnLockGong("Gong_TX1");me:AddSchoolScore(1, 1000);story:FinishSecret();</OKResult>
+          <NOResult>me:AddMsg(XT("[NAME]走到了法阵前，寻找破解阵法的方法。"));me:AddMsg(XT("[NAME]在阵法周围绕了五六圈，丝毫找不到破阵的线索。[NAME]只能无奈离去。"));</NOResult>
+        </li>
+        <li>
+          <Display>离开</Display>
+          <OKResult>me:AddMsg(XT("[NAME]感觉自己无缘获取这把神剑，走出了山洞。"));</OKResult>
+        </li>
+      </Selections>
+    </Story>
+    <Story Name="Secrets_TX1" Parent="BaseFillingStory">
+      <DisplayName>寻找太虚神剑</DisplayName>
+      <Desc>根据太虚无极剑诀所记载，此地便是当年太虚剑仙飞升之地，他随身的法宝遗落至此。千百年来无人知晓此秘密，剑仙的传奇六剑应该还存在于此地。</Desc>
+      <Selections>
+        <li>
+          <Display>根据记载寻找</Display>
+          <Condition>	
+				me:GetSkillLevel("Fabao") &gt;= 33</Condition>
+          <Tip>御器</Tip>
+          <OKResult>me:AddMsg(XT("[NAME]根据记载中的线索，竟然寻找到了一处古老的剑冢。"));me:AddMsg(XT("[NAME]盘腿在剑冢门前坐下，开始静修感悟，不久后大门打开了里面整整齐齐的摆着六把剑，[NAME]深谙御器之法，以高超的御器本领成功拿到了六把神剑。"));me:DropFabao(0,"Item_WeaponSword","Item_TXWuBlockSP",XT("无极归一剑"),XT("太虚剑宗祖师无极剑仙最中意的法宝之首，其性属无，此法宝锋利无比，威力绝伦，深具灵性。曾跟随剑仙渡过百次天劫。"),1,12,36);me:DropFabao(0,"Item_WeaponSword","Item_TXJinBlockSP",XT("万钧飞雷剑"),XT("太虚剑宗祖师无极剑仙最中意的法宝之一，其性属金，此法宝锋利无比，威力绝伦，深具灵性。曾跟随剑仙渡过百次天劫。"),1,12,36);me:DropFabao(0,"Item_WeaponSword","Item_TXMuBlockSP",XT("邪木毒血剑"),XT("太虚剑宗祖师无极剑仙最中意的法宝之一，其性属木，此法宝锋利无比，威力绝伦，深具灵性。曾跟随剑仙渡过百次天劫。"),1,12,36);me:DropFabao(0,"Item_WeaponSword","Item_TXShuiBlockSP",XT("九阴极冰剑"),XT("太虚剑宗祖师无极剑仙最中意的法宝之一，其性属水，此法宝锋利无比，威力绝伦，深具灵性。曾跟随剑仙渡过百次天劫。"),1,12,36);me:DropFabao(0,"Item_WeaponSword","Item_TXHuoBlockSP",XT("九阳炽魂剑"),XT("太虚剑宗祖师无极剑仙最中意的法宝之一，其性属火，此法宝锋利无比，威力绝伦，深具灵性。曾跟随剑仙渡过百次天劫。"),1,12,36);me:DropFabao(0,"Item_WeaponSword","Item_TXTuBlockSP",XT("劫灭飞沙剑"),XT("太虚剑宗祖师无极剑仙最中意的法宝之一，其性属土，此法宝锋利无比，威力绝伦，深具灵性。曾跟随剑仙渡过百次天劫。"),1,12,36);story:FinishSecret();</OKResult>
+          <NOResult>me:AddMsg(XT("[NAME]根据记载中的线索，竟然寻找到了一处古老的剑冢。"));me:AddMsg(XT("[NAME]剑冢大门紧闭，无法打开。[NAME]作揖拜过，只能无奈离去。"));</NOResult>
+        </li>
+        <li>
+          <Display>离开</Display>
+          <OKResult>me:AddMsg(XT("[NAME]想了想，决定暂时离开。"));</OKResult>
+        </li>
+      </Selections>
+    </Story>
+  </List>
+</Stories>

@@ -1,0 +1,183 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DanFormulas>
+  <List>
+    <!--阴石-->
+    <Dan Name="Dan_YinLingStone">
+      <Normal>0</Normal>
+      <ItemName>Item_YinLingStone</ItemName>
+      <Level>0</Level>
+      <SuccessRate>1</SuccessRate>
+      <Count>10</Count>
+    </Dan>
+    <!--阳石-->
+    <Dan Name="Dan_YangLingStone">
+      <Normal>0</Normal>
+      <ItemName>Item_YangLingStone</ItemName>
+      <Level>0</Level>
+      <SuccessRate>1</SuccessRate>
+      <Count>10</Count>
+    </Dan>
+    <!--凝阴石-->
+    <Dan Name="Dan_YinLingCrystal">
+      <Normal>0</Normal>
+      <ItemName>Item_YinLingCrystal</ItemName>
+      <Level>5</Level>
+      <SuccessRate>0.2</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <!--聚阳石-->
+    <Dan Name="Dan_YangLingCrystal">
+      <Normal>0</Normal>
+      <ItemName>Item_YangLingCrystal</ItemName>
+      <Level>5</Level>
+      <SuccessRate>0.2</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <!--太阴威能-->
+    <Dan Name="Dan_YinThunderAir">
+      <Normal>0</Normal>
+      <ItemName>Item_YinThunderAir</ItemName>
+      <Level>20</Level>
+      <SuccessRate>-1</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <!--极阳威能-->
+    <Dan Name="Dan_YangThunderAir">
+      <Normal>0</Normal>
+      <ItemName>Item_YangThunderAir</ItemName>
+      <Level>20</Level>
+      <SuccessRate>-1</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <!--剑胎-->
+    <Dan Name="Dan_TXSwordLT">
+      <Normal>0</Normal>
+      <ItemName>Item_TXSwordLT</ItemName>
+      <Level>10</Level>
+      <SuccessRate>0</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <!--太虚门丹药-->
+    <Dan Name="Dan_TX01">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX01</ItemName>
+      <Level>8</Level>
+      <SuccessRate>0.5</SuccessRate>
+      <Count>3</Count>
+    </Dan>
+    <Dan Name="Dan_TX02">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX02</ItemName>
+      <Level>5</Level>
+      <SuccessRate>0.3</SuccessRate>
+      <Count>1</Count>
+    </Dan>
+    <Dan Name="Dan_TX03">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX03</ItemName>
+      <Level>5</Level>
+      <SuccessRate>0.3</SuccessRate>
+      <Count>1</Count>
+    </Dan>
+    <Dan Name="Dan_TX04">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX04</ItemName>
+      <Level>10</Level>
+      <SuccessRate>-0.5</SuccessRate>
+      <Count>1</Count>
+    </Dan>
+    <Dan Name="Dan_TX05">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX05</ItemName>
+      <Level>12</Level>
+      <SuccessRate>-0.5</SuccessRate>
+      <Count>1</Count>
+    </Dan>
+    <Dan Name="Dan_TX06">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX06</ItemName>
+      <Level>12</Level>
+      <SuccessRate>-0.5</SuccessRate>
+      <Count>1</Count>
+    </Dan>
+    <Dan Name="Dan_TX07">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX07</ItemName>
+      <Level>15</Level>
+      <SuccessRate>-0.8</SuccessRate>
+      <Count>1</Count>
+    </Dan>
+    <Dan Name="Dan_TX08">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX08</ItemName>
+      <Level>15</Level>
+      <SuccessRate>-0.8</SuccessRate>
+      <Count>1</Count>
+    </Dan>
+    <Dan Name="Dan_TX09">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX09</ItemName>
+      <Level>20</Level>
+      <SuccessRate>-1.2</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <Dan Name="Dan_TX10">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX10</ItemName>
+      <Level>20</Level>
+      <SuccessRate>-1.2</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <Dan Name="Dan_TX11">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX11</ItemName>
+      <Level>20</Level>
+      <SuccessRate>-1.2</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <Dan Name="Dan_TX12">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX12</ItemName>
+      <Level>12</Level>
+      <SuccessRate>0</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <Dan Name="Dan_TX13">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX13</ItemName>
+      <Level>12</Level>
+      <SuccessRate>0</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <Dan Name="Dan_TXLingCrystal">
+      <Normal>0</Normal>
+      <ItemName>Item_LingCrystal</ItemName>
+      <Level>20</Level>
+      <SuccessRate>1</SuccessRate>
+      <Count>3</Count>
+    </Dan>
+    <Dan Name="Dan_TX14">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TX14</ItemName>
+      <Level>20</Level>
+      <SuccessRate>-1.2</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <!--无极石-->
+    <Dan Name="Dan_WujiRock">
+      <Normal>0</Normal>
+      <ItemName>Item_WujiRock</ItemName>
+      <Level>5</Level>
+      <SuccessRate>1</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+    <!--太极八卦种-->
+    <Dan Name="Dan_TJZhong">
+      <Normal>0</Normal>
+      <ItemName>Item_Dan_TJZhong</ItemName>
+      <Level>20</Level>
+      <SuccessRate>-1</SuccessRate>
+      <Count>0.1</Count>
+    </Dan>
+  </List>
+</DanFormulas>

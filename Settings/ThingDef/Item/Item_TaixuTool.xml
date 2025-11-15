@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+  <List>
+    <ThingDef Type="Item" Name="TX_Sword1" Parent="Item_WeaponSword">
+      <ThingName>太虚剑</ThingName>
+      <Desc>太虚剑宗以阴阳石为剑胎制作的宝剑。深具灵力，锋利无比。持有太虚剑突破战斗等级3级。</Desc>
+      <Item>
+        <FabaoSuffix>太虚剑</FabaoSuffix>
+        <NotFengshuiItem>1</NotFengshuiItem>
+        <NotRandom>1</NotRandom>
+        <Equip>
+          <Damage>15</Damage>
+          <AttackSpeed>1.5</AttackSpeed>
+          <AttackRange>1.5</AttackRange>
+          <AtkDamage>
+            <li PartKind="Flesh" Name="Cut1" Rate="0.3" />
+            <li PartKind="Flesh" Name="Cut2" Rate="0.3" />
+            <li PartKind="Organ" Name="VisceralCut" Rate="0.3" />
+          </AtkDamage>
+          <AtkAnis>
+            <li Name="LJpugong1" HitPoint="11" />
+            <li Name="LJpugong2" HitPoint="9" />
+            <li Name="LJpugong3" HitPoint="15" />
+            <li Name="LJpugong4" HitPoint="9" />
+          </AtkAnis>
+          <WeaponKind>Sword</WeaponKind>
+          <ModPath>Mod/Prop/Weapon/weapon_jian1</ModPath>
+          <ToolModifier>Modifier_TXSword1</ToolModifier>
+        </Equip>
+        <BeMade>
+          <WorkToMake>900</WorkToMake>
+          <Quality>0</Quality>
+          <ArtDesc></ArtDesc>
+          <StuffCategories>
+            <Stuff name="MetalBlock" />
+            <Stuff name="RockBlock" />
+            <Stuff name="WoodBlock" />
+          </StuffCategories>
+          <CostStuffCount>5</CostStuffCount>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="1" />
+            <Item name="Item_YangLingStone" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>20</AddionLing>
+        <AddionRadius>3</AddionRadius>
+        <AddionFailing>0.6</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>75</Accommodate>
+      </Ling>
+    </ThingDef>
+    <ThingDef Type="Item" Name="TX_Sword2" Parent="Item_WeaponSword">
+      <ThingName>太极剑</ThingName>
+      <Desc>太虚剑宗以凝阴聚阳法炼制剑胎来制作的神剑。拥有磅礴的灵气，强横匹敌。持有无极剑突破战斗等级5级突破御器等级2级，增加灵气恢复速度。</Desc>
+      <Item>
+        <FabaoSuffix>太极剑</FabaoSuffix>
+        <NotFengshuiItem>1</NotFengshuiItem>
+        <NotRandom>1</NotRandom>
+        <Equip>
+          <Damage>20</Damage>
+          <AttackSpeed>1.5</AttackSpeed>
+          <AttackRange>1.5</AttackRange>
+          <AtkDamage>
+            <li PartKind="Flesh" Name="Cut1" Rate="0.3" />
+            <li PartKind="Flesh" Name="Cut2" Rate="0.3" />
+            <li PartKind="Organ" Name="VisceralCut" Rate="0.3" />
+          </AtkDamage>
+          <AtkAnis>
+            <li Name="LJpugong1" HitPoint="11" />
+            <li Name="LJpugong2" HitPoint="9" />
+            <li Name="LJpugong3" HitPoint="15" />
+            <li Name="LJpugong4" HitPoint="9" />
+          </AtkAnis>
+          <WeaponKind>Sword</WeaponKind>
+          <ModPath>Mod/Prop/Weapon/weapon_jian11</ModPath>
+          <ToolModifier>Modifier_TXSword2</ToolModifier>
+        </Equip>
+        <BeMade>
+          <WorkToMake>1800</WorkToMake>
+          <Quality>100</Quality>
+          <ArtDesc></ArtDesc>
+          <StuffCategories>
+            <Stuff name="MetalBlock" />
+            <Stuff name="RockBlock" />
+            <Stuff name="WoodBlock" />
+          </StuffCategories>
+          <CostStuffCount>10</CostStuffCount>
+          <CostItems>
+            <Item name="Item_TXSwordLT" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>4</AddionRadius>
+        <AddionFailing>0.6</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>75</Accommodate>
+      </Ling>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXSwordLT" Parent="RockBase">
+      <TexPath>res\Sprs\object\object_qianlengyu01</TexPath>
+      <ThingName>太极剑胎</ThingName>
+      <Desc>太虚剑宗使用凝阴聚阳法炼制的剑胎，有大量灵气从中溢出。目前还不能使用，需要进一步锻造。</Desc>
+      <Rate>9</Rate>
+      <Beauty>15</Beauty>
+      <Item>
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>1</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="2000" />
+            <SalePrice Value="2000" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="5000" />
+            <SalePrice Value="3000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="4000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <NotFengshuiItem>0</NotFengshuiItem>
+        <PhysicalLables>
+          <li>Heavy1</li>
+          <li>Hard2</li>
+          <li>GreatThing_Ling</li>
+        </PhysicalLables>
+        <BeMade>
+          <WorkToMake>1800</WorkToMake>
+          <CostItems>
+            <Item name="Item_YinLingCrystal" count="1" />
+            <Item name="Item_YangLingCrystal" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>4</AddionRadius>
+        <AddionFailing>0.6</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>75</Accommodate>
+      </Ling>
+      <Light>
+        <Value>75</Value>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+        <Radius>3</Radius>
+        <Color>FFFFFFFF</Color>
+      </Light>
+      <Element>
+        <Kind>None</Kind>
+        <Value>1</Value>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="TX_Sword0" Parent="Item_WeaponSword">
+      <ThingName>无极神剑</ThingName>
+      <Desc>太虚剑宗开宗至宝，由上古无极之心历经九百九十九年灵粹成剑型，灵妙非凡。持有可巨幅提高战斗力，提高灵气恢复速度。放下可激活方圆数里的灵脉。</Desc>
+      <Rate>15</Rate>
+      <BindWeather>LingUpWave</BindWeather>
+      <Item>
+        <NotFengshuiItem>1</NotFengshuiItem>
+        <NotRandom>1</NotRandom>
+        <Equip>
+          <Damage>50</Damage>
+          <AttackSpeed>1.5</AttackSpeed>
+          <AttackRange>2</AttackRange>
+          <AtkDamage>
+            <li PartKind="Flesh" Name="Cut1" Rate="0.3" />
+            <li PartKind="Flesh" Name="Cut2" Rate="0.3" />
+            <li PartKind="Organ" Name="VisceralCut" Rate="0.3" />
+          </AtkDamage>
+          <AtkAnis>
+            <li Name="LJpugong1" HitPoint="11" />
+            <li Name="LJpugong2" HitPoint="9" />
+            <li Name="LJpugong3" HitPoint="15" />
+            <li Name="LJpugong4" HitPoint="9" />
+          </AtkAnis>
+          <WeaponKind>Sword</WeaponKind>
+          <ModPath>Mod/Prop/Weapon/weapon_jian11</ModPath>
+          <ToolModifier>Modifier_TXSword0</ToolModifier>
+        </Equip>
+      </Item>
+      <Ling>
+        <AddionLing>250</AddionLing>
+        <AddionRadius>5</AddionRadius>
+        <AddionFailing>0.6</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>75</Accommodate>
+      </Ling>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXFazhentu" Parent="ToolBase">
+      <ThingName>太虚无极阵图</ThingName>
+      <MaxStack>1</MaxStack>
+      <Rate>12</Rate>
+      <Beauty>15</Beauty>
+      <TexPath>res\Sprs\object_zhengfatianxia\object_zhentu01</TexPath>
+      <Desc>描绘了上古时代太虚剑宗独创的无极法阵图，可惜现在没有人能够再现法阵。携带可提高阵法技能等级和阵法负荷能力。</Desc>
+      <ElementKind>None</ElementKind>
+      <Item Kind="Equipment">
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>1</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="50000" FriendPoint="10" />
+            <SalePrice Value="50000" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="100000" />
+            <SalePrice Value="50000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="100000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <NotFengshuiItem>1</NotFengshuiItem>
+        <NotRandom>1</NotRandom>
+        <FabaoSuffix>阵图</FabaoSuffix>
+        <PhysicalLables>
+          <li>SmallThing</li>
+        </PhysicalLables>
+        <Equip>
+          <ToolModifier>Modifier_TXFazhentu</ToolModifier>
+        </Equip>
+      </Item>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXTiangong" Parent="ToolBase">
+      <ThingName>太虚铸剑真解录</ThingName>
+      <MaxStack>1</MaxStack>
+      <Rate>12</Rate>
+      <Beauty>15</Beauty>
+      <TexPath>res\Sprs\object\object_miji01</TexPath>
+      <Desc>太虚剑宗祖师所著的铸剑书，佩戴能巨幅提高炼器技能。</Desc>
+      <Flammability>
+        <Flammability>-1</Flammability>
+        <FlameSpawnThingDef></FlameSpawnThingDef>
+        <FlameSpawnChance>0</FlameSpawnChance>
+      </Flammability>
+      <Item Kind="Equipment">
+        <Prices>
+          <TalkType>0</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="50000" FriendPoint="10" />
+            <SalePrice Value="50000" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="100000" />
+            <SalePrice Value="50000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="50000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <NotFengshuiItem>1</NotFengshuiItem>
+        <NotRandom>1</NotRandom>
+        <FabaoSuffix>天书</FabaoSuffix>
+        <PhysicalLables>
+          <li>SmallThing</li>
+        </PhysicalLables>
+        <Equip>
+          <ToolModifier>Modifier_TXTiangong</ToolModifier>
+        </Equip>
+      </Item>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXBracelet" Parent="ToolBase">
+      <ThingName>太极镯</ThingName>
+      <MaxStack>1</MaxStack>
+      <TexPath>res\Sprs\object\object_jinzhuozi01</TexPath>
+      <Desc>太虚剑宗使用阴阳石为底料制作的手镯。美丽夺目，并且能隔绝灵气伤害。</Desc>
+      <Flammability>
+        <Flammability>0.5</Flammability>
+        <FlameSpawnThingDef></FlameSpawnThingDef>
+        <FlameSpawnChance>0</FlameSpawnChance>
+      </Flammability>
+      <Item Kind="Equipment">
+        <FabaoSuffix>太极镯</FabaoSuffix>
+        <PhysicalLables>
+          <li>SmallThing</li>
+          <li>GreatThing_Attack</li>
+        </PhysicalLables>
+        <FuelMultiplier>1</FuelMultiplier>
+        <BeMade>
+          <WorkToMake>300</WorkToMake>
+          <Quality>100</Quality>
+          <ArtDesc></ArtDesc>
+          <StuffCategories>
+            <Stuff name="WoodBlock" />
+            <Stuff name="RockBlock" />
+            <Stuff name="MetalBlock" />
+            <Stuff name="Wood" />
+            <Stuff name="Rock" />
+            <Stuff name="Metal" />
+          </StuffCategories>
+          <CostStuffCount>1</CostStuffCount>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="1" />
+            <Item name="Item_YangLingStone" count="1" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ToolModifier>Modifier_TXZhuo</ToolModifier>
+        </Equip>
+      </Item>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXAcupuncture" Parent="ToolBase">
+      <ThingName>阴阳针</ThingName>
+      <MaxStack>1</MaxStack>
+      <TexPath>res/Sprs/object/object_zhenjiu01</TexPath>
+      <Desc>太虚剑宗使用阴阳石为底料制作的针灸。提高医疗水平和治疗效果。</Desc>
+      <Item Kind="Equipment">
+        <FabaoSuffix>阴阳针</FabaoSuffix>
+        <PhysicalLables>
+          <li>Sharp</li>
+          <li>Light2</li>
+          <li>Smooth2</li>
+          <li>SmallThing</li>
+          <li>GreatThing_Attack</li>
+        </PhysicalLables>
+        <BeMade>
+          <WorkToMake>300</WorkToMake>
+          <Quality>100</Quality>
+          <ArtDesc></ArtDesc>
+          <StuffCategories>
+            <Stuff name="WoodBlock" />
+            <Stuff name="RockBlock" />
+            <Stuff name="MetalBlock" />
+            <Stuff name="Wood" />
+            <Stuff name="Rock" />
+            <Stuff name="Metal" />
+          </StuffCategories>
+          <CostStuffCount>1</CostStuffCount>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="1" />
+            <Item name="Item_YangLingStone" count="1" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ToolModifier>Modifier_TXZhenjiu</ToolModifier>
+        </Equip>
+      </Item>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXPerfumeBag" Parent="ToolBase">
+      <ThingName>沁灵香囊</ThingName>
+      <MaxStack>1</MaxStack>
+      <TexPath>res\Sprs\object\object_xiangnang01</TexPath>
+      <Desc>太虚门使用地母灵液与邪脉血泉浸泡清心草制作的香囊。香气迷人，极有灵气。</Desc>
+      <Flammability>
+        <Flammability>0.5</Flammability>
+        <FlameSpawnThingDef></FlameSpawnThingDef>
+        <FlameSpawnChance>0</FlameSpawnChance>
+      </Flammability>
+      <Item Kind="Equipment">
+        <FabaoSuffix>囊</FabaoSuffix>
+        <PhysicalLables>
+          <li>SmallThing</li>
+        </PhysicalLables>
+        <FuelMultiplier>1</FuelMultiplier>
+        <BeMade>
+          <WorkToMake>300</WorkToMake>
+          <Quality>100</Quality>
+          <ArtDesc></ArtDesc>
+          <StuffCategories>
+            <Stuff name="Cloth" />
+            <Stuff name="Leather" />
+          </StuffCategories>
+          <CostStuffCount>10</CostStuffCount>
+          <CostItems>
+            <Item name="Item_Mint" count="100" />
+            <Item name="Item_EarthEssence" count="1" />
+            <Item name="Item_EarthEssence1" count="1" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ToolModifier>SysTool_Fun5</ToolModifier>
+        </Equip>
+      </Item>
+    </ThingDef>
+  </List>
+</ThingDefs>

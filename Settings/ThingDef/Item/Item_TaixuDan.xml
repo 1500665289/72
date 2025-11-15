@@ -1,0 +1,795 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+  <List>
+    <ThingDef Type="Item" Name="Item_Dan_TJZhong" Parent="DanBase">
+      <MaxStack>1</MaxStack>
+      <ThingName>太极八卦种</ThingName>
+      <TexPath>res\Sprs\object\object_lingyuanzhong01</TexPath>
+      <Desc>太虚剑宗无极真解中记录的圣物。阴阳调和的最高造诣，以秘法将阴阳之极与造化玉籽合练而成的至宝，神妙无穷。散发出磅礴的灵气。佩戴则可以思维迅捷，心境清明，增强体魄。服用可以大幅从根本上提高灵气最大值。</Desc>
+      <Rate>12</Rate>
+      <Beauty>50</Beauty>
+      <ElementKind>None</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="5000" FriendPoint="5" />
+            <SalePrice Value="5000" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="10000" />
+            <SalePrice Value="8000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="10000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <NotFengshuiItem>0</NotFengshuiItem>
+        <PhysicalLables>
+          <li>Smooth1</li>
+          <li>Hard1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Elixir>
+          <DiscipleOnly>1</DiscipleOnly>
+          <Ling>1000000</Ling>
+          <Modifier>Dan_TJZhong</Modifier>
+          <Fesistance>0</Fesistance>
+        </Elixir>
+        <Equip>
+          <ToolModifier>Dan_TJZhong_Equip</ToolModifier>
+        </Equip>
+        <BeMade>
+          <WorkToMake>5400</WorkToMake>
+          <CostItems>
+            <Item name="Item_ZaoHuaYuZi" count="1" />
+            <Item name="Item_YangThunderAir" count="1" />
+            <Item name="Item_YinThunderAir" count="1" />
+            <Item name="Item_YinLingStone" count="33" />
+            <Item name="Item_YangLingStone" count="33" />
+          </CostItems>
+        </BeMade>
+        <!-- 
+			<LingPlantName>TreePear</LingPlantName>
+			-->
+      </Item>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+      </Element>
+      <Ling>
+        <AddionLing>150</AddionLing>
+        <AddionRadius>5</AddionRadius>
+        <AddionFailing>0.6</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>75</Accommodate>
+      </Ling>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX01" Parent="DanBase">
+      <ThingName>阴阳爆灵丹</ThingName>
+      <TexPath>res\Sprs\object\object_XIAOdanyao02</TexPath>
+      <Desc>太虚门以阴石阳石配以灵仙草炼制的仙丹，服用后阴阳冲虚爆发大量灵气，在二十四个时辰内大幅提高灵气恢复速度。</Desc>
+      <Rate>8</Rate>
+      <Beauty>5</Beauty>
+      <ElementKind>Mu</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="100" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="100" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="400" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Smooth1</li>
+          <li>Hard1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Elixir>
+          <Modifier>Modifier_Dan_TX01</Modifier>
+          <Ling>20000</Ling>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>300</WorkToMake>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="1" />
+            <Item name="Item_YangLingStone" count="1" />
+            <Item name="Item_MagicHerb" count="50" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>Mu</Kind>
+        <Value>3</Value>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX02" Parent="DanBase">
+      <ThingName>天阳精元丹</ThingName>
+      <TexPath>res\Sprs\object\object_XIAOdanyao02</TexPath>
+      <Desc>太虚门以人参芝草聚合阳石中纯阳灵力炼制的仙丹，服用后可大补精元。</Desc>
+      <Rate>8</Rate>
+      <Beauty>5</Beauty>
+      <ElementKind>Mu</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="100" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="100" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="400" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Smooth1</li>
+          <li>Hard1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Food>
+          <EatDirectable>1</EatDirectable>
+          <Nutrition>0</Nutrition>
+          <Water>0</Water>
+          <PracticeNutrition>100</PracticeNutrition>
+        </Food>
+        <BeMade>
+          <WorkToMake>300</WorkToMake>
+          <CostItems>
+            <Item name="Item_YangLingStone" count="1" />
+            <Item name="Item_Ginseng" count="3" />
+            <Item name="Item_GanodermaLucidum" count="3" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>Mu</Kind>
+        <Value>3</Value>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX03" Parent="DanBase">
+      <ThingName>地阴净心丹</ThingName>
+      <TexPath>res\Sprs\object\object_XIAOdanyao07</TexPath>
+      <Desc>太虚门以阴石改进的清心丹。能长时间稳定心境。</Desc>
+      <Rate>8</Rate>
+      <Beauty>5</Beauty>
+      <ElementKind>Shui</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>25</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="100" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="100" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="400" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Smooth1</li>
+          <li>Hard1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Elixir>
+          <Modifier>Modifier_Dan_TX03</Modifier>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>300</WorkToMake>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="1" />
+            <Item name="Item_SilverGrit" count="5" />
+            <Item name="Item_Mint" count="30" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>Shui</Kind>
+        <Value>3</Value>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX04" Parent="DanBase">
+      <ThingName>两仪金丹</ThingName>
+      <TexPath>res\Sprs\object\object_DAdanyao04</TexPath>
+      <Desc>太虚门以阴石阳石配合灵仙草银杏果炼制的金丹，服用后在一周内大量提高修行速度。</Desc>
+      <Rate>9</Rate>
+      <Beauty>10</Beauty>
+      <ElementKind>Mu</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="1000" />
+            <SalePrice Value="600" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="1000" />
+            <SalePrice Value="600" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="1000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Smooth1</li>
+          <li>Hard1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Elixir>
+          <Modifier>Modifier_Dan_TX04</Modifier>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>600</WorkToMake>
+          <CostItems>
+            <Item name="Item_YangLingStone" count="5" />
+            <Item name="Item_YinLingStone" count="5" />
+            <Item name="Item_MagicHerb" count="30" />
+            <Item name="Item_Ginkgo" count="30" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>Mu</Kind>
+        <Value>3</Value>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX05" Parent="DanBase">
+      <ThingName>聚阳饕餮丹</ThingName>
+      <TexPath>res\Sprs\object\object_XIAOdanyao02</TexPath>
+      <Desc>太虚门以聚阳石配合多种灵药炼制的仙丹，服用可在半个月内强化饮气，高效炼化精元，精神振奋。</Desc>
+      <Tags>
+        <Tag Name="Food" Level="3" />
+        <Tag Name="DiscipleFood" Level="3" />
+      </Tags>
+      <Rate>9</Rate>
+      <Beauty>10</Beauty>
+      <ElementKind>Huo</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="400" />
+            <SalePrice Value="400" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="600" />
+            <SalePrice Value="500" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="1000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Smooth1</li>
+          <li>Hard1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Food>
+          <EatDirectable>1</EatDirectable>
+          <Nutrition>0</Nutrition>
+          <Water>0</Water>
+          <PracticeNutrition>300</PracticeNutrition>
+        </Food>
+        <Elixir>
+          <Modifier>Modifier_Dan_TX05</Modifier>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>600</WorkToMake>
+          <CostItems>
+            <Item name="Item_YangLingCrystal" count="1" />
+            <Item name="Item_RedGinseng" count="3" />
+            <Item name="Item_PurpleGanodermaLucidum" count="3" />
+            <Item name="Item_MonsterBlood" count="3" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>Mu</Kind>
+        <Value>3</Value>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX06" Parent="DanBase">
+      <ThingName>凝阴灵智丹</ThingName>
+      <TexPath>res\Sprs\object\object_XIAOdanyao07</TexPath>
+      <Desc>太虚门以凝阴石配合多种灵药炼制的仙丹，服用可在半个月悟性大增，思维敏捷，心境清明，破关坦途。</Desc>
+      <Rate>9</Rate>
+      <Beauty>10</Beauty>
+      <ElementKind>Shui</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="400" />
+            <SalePrice Value="400" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="600" />
+            <SalePrice Value="500" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="1000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Smooth1</li>
+          <li>Hard1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Elixir>
+          <Modifier>Modifier_Dan_TX06</Modifier>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>600</WorkToMake>
+          <CostItems>
+            <Item name="Item_YinLingCrystal" count="1" />
+            <Item name="Item_LifeStream" count="1" />
+            <Item name="Item_Mint" count="50" />
+            <Item name="Item_MagicHerb" count="50" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>Shui</Kind>
+        <Value>3</Value>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX07" Parent="DanBase">
+      <ThingName>冲阳造化神丹</ThingName>
+      <TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+      <Desc>太虚门汇集各种天材地宝配以聚阳大法炼制的延寿仙丹。服用直接延寿九十九年，且几乎没有耐药性。</Desc>
+      <Rate>9</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>Mu</ElementKind>
+      <Color>DC143CFF</Color>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="1000" />
+            <SalePrice Value="800" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="1500" />
+            <SalePrice Value="1000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="2000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Smooth2</li>
+          <li>Hard1</li>
+          <li>GreatThing_Ling</li>
+        </PhysicalLables>
+        <Elixir>
+          <Modifier>Modifier_Dan_TX07</Modifier>
+          <Fesistance>0.97</Fesistance>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>1200</WorkToMake>
+          <CostItems>
+            <Item name="Item_YangLingCrystal" count="1" />
+            <Item name="Item_PurpleGanodermaLucidum" count="9" />
+            <Item name="Item_RedGinseng" count="9" />
+            <Item name="Item_MagicHerb" count="99" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>Mu</Kind>
+        <Value>6</Value>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX08" Parent="DanBase">
+      <ThingName>冥阴七珀神丹</ThingName>
+      <TexPath>res\Sprs\object\object_DAdanyao01</TexPath>
+      <Desc>太虚门使用七命神珀附着在玄牝珠上使用凝阴大法炼制的神丹。服用感受七魂残念，获得大量参悟。</Desc>
+      <Rate>9</Rate>
+      <Beauty>15</Beauty>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>Shui</ElementKind>
+      <Color>00008BFF</Color>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="1000" />
+            <SalePrice Value="800" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="1500" />
+            <SalePrice Value="1000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="2000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Smooth2</li>
+          <li>Hard1</li>
+          <li>GreatThing_Ling</li>
+        </PhysicalLables>
+        <Elixir>
+          <TreeExp>77777</TreeExp>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>1200</WorkToMake>
+          <CostItems>
+            <Item name="Item_YinLingCrystal" count="1" />
+            <Item name="Item_SoulPearl" count="1" />
+            <Item name="Item_SoulCrystalNing" count="7" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>Shui</Kind>
+        <Value>6</Value>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX09" Parent="DanBase">
+      <MaxStack>1</MaxStack>
+      <ThingName>太极九魂九魄神丹</ThingName>
+      <TexPath>res\Sprs\object\object_yinyangzhenlingdan01</TexPath>
+      <Desc>太虚门所传三圣丹之一，据说是太古时代的丹方，以妖灵血为燃料凝阴聚阳湮灭无极合练九灵九幽九宁之魂长达九日炼成。服用此丹可于元神中游历三重九世之乐之苦之宁，以获得九道元神分神。服用后因瞬间过量记忆冲击心神，会导致元神寂灭九天。只有元神期修为服用才有效。</Desc>
+      <Rate>12</Rate>
+      <Beauty>25</Beauty>
+      <ElementKind>Huo</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>1</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="5000" FriendPoint="2" />
+            <SalePrice Value="5000" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="10000" />
+            <SalePrice Value="5000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="5000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Smooth1</li>
+          <li>Hard1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Elixir>
+          <GodSoulCount>9</GodSoulCount>
+          <Modifier>Modifier_Dan_TX09</Modifier>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>5400</WorkToMake>
+          <CostItems>
+            <Item name="Item_YangLingCrystal" count="3" />
+            <Item name="Item_YinLingCrystal" count="3" />
+            <Item name="Item_SoulCrystalLing" count="9" />
+            <Item name="Item_SoulCrystalYou" count="9" />
+            <Item name="Item_SoulCrystalNing" count="9" />
+            <Item name="Item_MonsterBlood" count="9" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>Huo</Kind>
+        <Value>9</Value>
+      </Element>
+      <Ling>
+        <AddionLing>150</AddionLing>
+        <AddionRadius>5</AddionRadius>
+        <AddionFailing>0.8</AddionFailing>
+        <AddionFailRadius>2</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX10" Parent="DanBase">
+      <ThingName>太虚阴阳奠灵丹</ThingName>
+      <TexPath>res\Sprs\object\object_longhunzhenlingdan01</TexPath>
+      <Desc>太虚门不传之秘，三圣丹之一，彻透阴阳调和之造物。服用后可巨幅扩充气海，提高道行33点。但是如果服用者修为不够，灵脉不深，必将气海爆裂而死。只有第一次服用有效。</Desc>
+      <Rate>12</Rate>
+      <Beauty>25</Beauty>
+      <ElementKind>Tu</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>1</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="5000" FriendPoint="3" />
+            <SalePrice Value="5000" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="10000" />
+            <SalePrice Value="5000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="5000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Smooth1</li>
+          <li>Hard1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Elixir>
+          <DiscipleOnly>1</DiscipleOnly>
+          <Ling>999999</Ling>
+          <Modifier>Modifier_Dan_TX10</Modifier>
+          <Fesistance>0</Fesistance>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>3000</WorkToMake>
+          <CostItems>
+            <Item name="Item_YangLingCrystal" count="3" />
+            <Item name="Item_YinLingCrystal" count="3" />
+            <Item name="Item_EarthEssence" count="3" />
+            <Item name="Item_EarthEssence1" count="3" />
+            <Item name="Item_ExtremeJade" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>Tu</Kind>
+        <Value>9</Value>
+      </Element>
+      <Ling>
+        <AddionLing>240</AddionLing>
+        <AddionRadius>5</AddionRadius>
+        <AddionFailing>0.8</AddionFailing>
+        <AddionFailRadius>2</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX11" Parent="DanBase">
+      <MaxStack>1</MaxStack>
+      <ThingName>无极五行仙魂丹</ThingName>
+      <TexPath>res\Sprs\object\object_fenghunzhenlingdan01</TexPath>
+      <Desc>太虚门至高神丹，三圣丹之首。据说是用五行灵根以无极真法湮化仙人遗骨凝聚仙魂所成。服用可将其炼化为一道分神，额外驾驭一件法宝。只有第一次服用有效。</Desc>
+      <Rate>12</Rate>
+      <Beauty>25</Beauty>
+      <ElementKind>None</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="10000" FriendPoint="5" />
+            <SalePrice Value="10000" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="18000" />
+            <SalePrice Value="15000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="5000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <NotFengshuiItem>0</NotFengshuiItem>
+        <PhysicalLables>
+          <li>Smooth1</li>
+          <li>Hard1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Elixir>
+          <GodSoulCount>1</GodSoulCount>
+          <Modifier>Modifier_Dan_TX11</Modifier>
+          <Fesistance>0</Fesistance>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>8400</WorkToMake>
+          <CostItems>
+            <Item name="Item_YangThunderAir" count="1" />
+            <Item name="Item_YinThunderAir" count="1" />
+            <Item name="Item_JinEssence" count="1" />
+            <Item name="Item_MuEssence" count="1" />
+            <Item name="Item_ShuiEssence" count="1" />
+            <Item name="Item_HuoEssence" count="1" />
+            <Item name="Item_TuEssence" count="1" />
+            <Item name="Item_XianBone" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>None</Kind>
+        <Value>1</Value>
+      </Element>
+      <Ling>
+        <AddionLing>180</AddionLing>
+        <AddionRadius>5</AddionRadius>
+        <AddionFailing>0.8</AddionFailing>
+        <AddionFailRadius>2</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX12" Parent="DanBase">
+      <ThingName>九阳焚心丹</ThingName>
+      <TexPath>res\Sprs\object\object_plaster03</TexPath>
+      <Desc>太虚门下记录的一种丹药。以九重聚阳灵力炼成的丹药，服用后会让服用者五内俱焚，并且永久降低心境心情。但也会增强神识和根骨两成，并从根本上提高灵气最大值。即便如此，就算是太虚门人也很少会有人服用。</Desc>
+      <Rate>9</Rate>
+      <Beauty>9</Beauty>
+      <ElementKind>None</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>4</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="2000" />
+            <SalePrice Value="500" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="2000" />
+            <SalePrice Value="500" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>LowDensity1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Elixir>
+          <Modifier>Modifier_Dan_TX12</Modifier>
+          <Fesistance>0</Fesistance>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>600</WorkToMake>
+          <CostItems>
+            <Item name="Item_YangLingStone" count="9" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>None</Kind>
+        <Value>3</Value>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX13" Parent="DanBase">
+      <ThingName>九阴寂神丹</ThingName>
+      <TexPath>res\Sprs\object\object_plaster03</TexPath>
+      <Desc>太虚门下记录的一种丹药。以九重凝阳灵力炼成的丹药，服用后会让服用者承受不住阴气立刻昏厥，并且折寿一个甲子。醒来后，提高魅力和悟性两成，并从根本上提高灵气最大值。即便如此，就算是太虚门人也很少会有人服用。</Desc>
+      <Rate>9</Rate>
+      <Beauty>9</Beauty>
+      <ElementKind>None</ElementKind>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>4</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="2000" />
+            <SalePrice Value="500" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="2000" />
+            <SalePrice Value="500" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>LowDensity1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Elixir>
+          <Modifier>Modifier_Dan_TX13</Modifier>
+          <Fesistance>0</Fesistance>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>600</WorkToMake>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="9" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>None</Kind>
+        <Value>3</Value>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_Dan_TX14" Parent="DanBase">
+      <MaxStack>1</MaxStack>
+      <ThingName>欺天神丹</ThingName>
+      <TexPath>res\Sprs\object\object_fenghunzhenlingdan01</TexPath>
+      <Desc>太虚门极为隐秘的丹方，借阴阳威能遮蔽天道，倘若能承受住这磅礴的灵气，则能完全抹去天眼中自身的存在。从而永久消灭天劫之苦，但毕生修为也再无精进可能，更无飞升之希望。</Desc>
+      <Rate>12</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>None</ElementKind>
+      <Color>606060FF</Color>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="5000" FriendPoint="5" />
+            <SalePrice Value="5000" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="10000" />
+            <SalePrice Value="5000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="5000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <NotFengshuiItem>0</NotFengshuiItem>
+        <PhysicalLables>
+          <li>Smooth1</li>
+          <li>Hard1</li>
+          <li>Light1</li>
+        </PhysicalLables>
+        <Elixir>
+          <Modifier>Modifier_Dan_TX14</Modifier>
+          <Fesistance>0</Fesistance>
+          <Ling>2333333</Ling>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>4200</WorkToMake>
+          <CostItems>
+            <Item name="Item_YangThunderAir" count="1" />
+            <Item name="Item_YinThunderAir" count="1" />
+            <Item name="Item_ThunderAir" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Element>
+        <Kind>None</Kind>
+        <Value>1</Value>
+      </Element>
+      <Ling>
+        <AddionLing>150</AddionLing>
+        <AddionRadius>5</AddionRadius>
+        <AddionFailing>0.8</AddionFailing>
+        <AddionFailRadius>2</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+    </ThingDef>
+  </List>
+</ThingDefs>

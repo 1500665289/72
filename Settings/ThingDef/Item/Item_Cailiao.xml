@@ -1,0 +1,993 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+  <List>
+    <ThingDef Type="Item" Name="Item_TXWuBlock" Parent="MetalBlockBase">
+      <ThingName>无极锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合大量灵晶冲虚熔炼的无极金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Color>FF96DCFF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy2</li>
+          <li>Hard2</li>
+          <li>HighDensity2</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>无极</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>FF96DCFF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_LingCrystal" count="25" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>4</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+        <Radius>1</Radius>
+        <Failing>0</Failing>
+        <FailRadius>0</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXJinBlock" Parent="MetalBlockBase">
+      <ThingName>金雷锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合琅琊果冲虚熔炼的金雷金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>Jin</ElementKind>
+      <Color>FFFF96FF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy2</li>
+          <li>Hard2</li>
+          <li>HighDensity2</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>金雷</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>FFFF96FF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_JinEssence" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>4</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Jin</Kind>
+        <Value>9</Value>
+        <Radius>4</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXMuBlock" Parent="MetalBlockBase">
+      <ThingName>枯木锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合木枯藤冲虚熔炼的枯木金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>Mu</ElementKind>
+      <Color>C8FAC8FF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy2</li>
+          <li>Hard2</li>
+          <li>HighDensity2</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>枯木</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>C8FAC8FF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_MuEssence" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>4</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Mu</Kind>
+        <Value>9</Value>
+        <Radius>4</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXShuiBlock" Parent="MetalBlockBase">
+      <ThingName>冰莲锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合五色金莲冲虚熔炼的冰莲金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>Shui</ElementKind>
+      <Color>96DCFFFF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy2</li>
+          <li>Hard2</li>
+          <li>HighDensity2</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>冰莲</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>96DCFFFF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_ShuiEssence" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>4</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Shui</Kind>
+        <Value>9</Value>
+        <Radius>4</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXHuoBlock" Parent="MetalBlockBase">
+      <ThingName>朱火锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合朱果冲虚熔炼的朱火金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>Huo</ElementKind>
+      <Color>FF4500FF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy2</li>
+          <li>Hard2</li>
+          <li>HighDensity2</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>朱火</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>FF4500FF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_HuoEssence" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>4</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Huo</Kind>
+        <Value>9</Value>
+        <Radius>4</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXTuBlock" Parent="MetalBlockBase">
+      <ThingName>秘土锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合赭黄精冲虚熔炼的秘土金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>Tu</ElementKind>
+      <Color>966432FF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy2</li>
+          <li>Hard2</li>
+          <li>HighDensity2</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>秘土</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>966432FF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_TuEssence" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>4</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Tu</Kind>
+        <Value>9</Value>
+        <Radius>4</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_CLWood" Parent="RockBase">
+      <ThingName>沉灵木</ThingName>
+      <TexPath>res\Sprs\object\object_wood01</TexPath>
+      <Desc>金丝灵木与灵木进行灵淬加工成的坚硬木材，防潮防火。</Desc>
+      <Beauty>10</Beauty>
+      <Rate>7</Rate>
+      <Color>A050A0FF</Color>
+      <ElementKind>Mu</ElementKind>
+      <Item>
+        <PhysicalLables>
+          <li>Smooth1</li>
+        </PhysicalLables>
+        <BeMade>
+          <WorkToMake>200</WorkToMake>
+          <Quality>0</Quality>
+          <CostItems>
+            <Item name="Item_HardWood" count="5" />
+            <Item name="Item_LingWood" count="5" />
+            <Item name="Item_LingCrystal" count="1" />
+          </CostItems>
+        </BeMade>
+        <BeMaterial>
+          <NamePrefix>沉灵木</NamePrefix>
+          <StuffTexPath>res/mattex/mtl_wood1</StuffTexPath>
+          <CostMultiplier>1</CostMultiplier>
+          <RateWhenBeMain>7</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+          <MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+          <BurningPointWhenBeMain>240</BurningPointWhenBeMain>
+          <FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>10</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+          <PracticeEffectivenessWhenBeMain>0.5</PracticeEffectivenessWhenBeMain>
+          <WorktoMakeRate>1.2</WorktoMakeRate>
+          <WorktoBuildRate>1.2</WorktoBuildRate>
+          <ColorWhenBeMain>C070C0FF</ColorWhenBeMain>
+        </BeMaterial>
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>10</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="500" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="800" />
+            <SalePrice Value="300" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="1500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+      </Item>
+      <Ling>
+        <AddionLing>50</AddionLing>
+        <AddionRadius>4</AddionRadius>
+        <AddionFailing>0.8</AddionFailing>
+        <AddionFailRadius>2</AddionFailRadius>
+        <Attenuation>0.06</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>34</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Mu</Kind>
+        <Value>5</Value>
+        <Radius>3</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_CLWoodBlock" Parent="RockBlockBase">
+      <ThingName>沉灵木砖</ThingName>
+      <TexPath>res\Sprs\object\object_brick03</TexPath>
+      <Desc>沉灵木切割成的砖块，可以更有效的用来进行制作。</Desc>
+      <Beauty>10</Beauty>
+      <Rate>7</Rate>
+      <Color>A050A0FF</Color>
+      <ElementKind>Mu</ElementKind>
+      <Item>
+        <PhysicalLables>
+          <li>Smooth1</li>
+        </PhysicalLables>
+        <BeMade>
+          <WorkToMake>60</WorkToMake>
+          <Quality>0</Quality>
+          <CostItems>
+            <Item name="Item_CLWood" count="1" />
+          </CostItems>
+        </BeMade>
+        <BeMaterial>
+          <NamePrefix>沉灵木</NamePrefix>
+          <StuffTexPath>res/mattex/mtl_wood1</StuffTexPath>
+          <CostMultiplier>1</CostMultiplier>
+          <RateWhenBeMain>7</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+          <MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+          <BurningPointWhenBeMain>240</BurningPointWhenBeMain>
+          <FlammabilityWhenBeMain>0.4</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>10</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>3</ElementPowerWhenBeMain>
+          <PracticeEffectivenessWhenBeMain>0.5</PracticeEffectivenessWhenBeMain>
+          <WorktoMakeRate>1.2</WorktoMakeRate>
+          <WorktoBuildRate>1.2</WorktoBuildRate>
+          <ColorWhenBeMain>C070C0FF</ColorWhenBeMain>
+        </BeMaterial>
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="100" FriendPoint="0" />
+            <SalePrice Value="0" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="125" />
+            <SalePrice Value="50" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="200" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+      </Item>
+      <Ling>
+        <AddionLing>35</AddionLing>
+        <AddionRadius>4</AddionRadius>
+        <AddionFailing>0.8</AddionFailing>
+        <AddionFailRadius>2</AddionFailRadius>
+        <Attenuation>0.06</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>34</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Mu</Kind>
+        <Value>5</Value>
+        <Radius>3</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXWuBlockSP" Parent="MetalBlockBase">
+      <ThingName>上古无极锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合大量灵晶冲虚熔炼的无极金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Color>FF96DCFF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <BeMaterial>
+          <NamePrefix>上古无极</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>FF96DCFF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_LingCrystal" count="25" />
+          </CostItems>
+        </BeMade>
+        <PhysicalLables>
+          <li>GreatThing_Attack</li>
+          <li>GreatThing_Ling</li>
+          <li>Sharp</li>
+        </PhysicalLables>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>3</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+        <Radius>1</Radius>
+        <Failing>0</Failing>
+        <FailRadius>0</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXJinBlockSP" Parent="MetalBlockBase">
+      <ThingName>上古金雷锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合琅琊果冲虚熔炼的金雷金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>Jin</ElementKind>
+      <Color>FFFF96FF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <BeMaterial>
+          <NamePrefix>上古金雷</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>FFFF96FF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_JinEssence" count="1" />
+          </CostItems>
+        </BeMade>
+        <PhysicalLables>
+          <li>GreatThing_Attack</li>
+          <li>GreatThing_Ling</li>
+          <li>Sharp</li>
+        </PhysicalLables>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>3</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Jin</Kind>
+        <Value>9</Value>
+        <Radius>4</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXMuBlockSP" Parent="MetalBlockBase">
+      <ThingName>上古枯木锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合木枯藤冲虚熔炼的枯木金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>Mu</ElementKind>
+      <Color>C8FAC8FF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <BeMaterial>
+          <NamePrefix>上古枯木</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>C8FAC8FF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_MuEssence" count="1" />
+          </CostItems>
+        </BeMade>
+        <PhysicalLables>
+          <li>GreatThing_Attack</li>
+          <li>GreatThing_Ling</li>
+          <li>Sharp</li>
+        </PhysicalLables>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>3</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Mu</Kind>
+        <Value>9</Value>
+        <Radius>4</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXShuiBlockSP" Parent="MetalBlockBase">
+      <ThingName>上古冰莲锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合五色金莲冲虚熔炼的冰莲金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>Shui</ElementKind>
+      <Color>96DCFFFF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <BeMaterial>
+          <NamePrefix>上古冰莲</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>96DCFFFF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_ShuiEssence" count="1" />
+          </CostItems>
+        </BeMade>
+        <PhysicalLables>
+          <li>GreatThing_Attack</li>
+          <li>GreatThing_Ling</li>
+          <li>Sharp</li>
+        </PhysicalLables>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>3</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Shui</Kind>
+        <Value>9</Value>
+        <Radius>4</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXHuoBlockSP" Parent="MetalBlockBase">
+      <ThingName>上古朱火锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合朱果冲虚熔炼的朱火金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>Huo</ElementKind>
+      <Color>FF4500FF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <BeMaterial>
+          <NamePrefix>上古朱火</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>FF4500FF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_HuoEssence" count="1" />
+          </CostItems>
+        </BeMade>
+        <PhysicalLables>
+          <li>GreatThing_Attack</li>
+          <li>GreatThing_Ling</li>
+          <li>Sharp</li>
+        </PhysicalLables>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>3</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Huo</Kind>
+        <Value>9</Value>
+        <Radius>4</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXTuBlockSP" Parent="MetalBlockBase">
+      <ThingName>上古秘土锭</ThingName>
+      <TexPath>res\Sprs\object\object_ironingot</TexPath>
+      <Desc>以阴阳石混合赭黄精冲虚熔炼的秘土金属，富有灵气。阴阳中和使其有致密坚固的特点。</Desc>
+      <MaxHitPoints>500</MaxHitPoints>
+      <Rate>8</Rate>
+      <Beauty>15</Beauty>
+      <ElementKind>Tu</ElementKind>
+      <Color>966432FF</Color>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="150" />
+            <SalePrice Value="150" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="150" />
+            <SalePrice Value="200" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <BeMaterial>
+          <NamePrefix>上古秘土</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_Blackiron</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.2</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>966432FF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>500</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>9</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="10" />
+            <Item name="Item_YangLingStone" count="10" />
+            <Item name="Item_TuEssence" count="1" />
+          </CostItems>
+        </BeMade>
+        <PhysicalLables>
+          <li>GreatThing_Attack</li>
+          <li>GreatThing_Ling</li>
+          <li>Sharp</li>
+        </PhysicalLables>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <Ling>
+        <AddionLing>60</AddionLing>
+        <AddionRadius>3</AddionRadius>
+        <AddionFailing>0.9</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0.1</Attenuation>
+        <Absorption>0.8</Absorption>
+        <Accommodate>40</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Tu</Kind>
+        <Value>9</Value>
+        <Radius>4</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>2</FailRadius>
+      </Element>
+    </ThingDef>
+  </List>
+</ThingDefs>

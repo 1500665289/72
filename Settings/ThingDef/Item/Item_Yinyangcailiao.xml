@@ -1,0 +1,428 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+  <List>
+    <ThingDef Type="Item" Name="Item_TaixuBlock" Parent="RockBlockBase">
+      <ThingName>太虚石砖</ThingName>
+      <TexPath>res\Sprs\object\object_brick</TexPath>
+      <Desc>太虚门使用独特方法切割灵石成的砖块，可以更有效的用来进行制作。</Desc>
+      <Rate>6</Rate>
+      <Beauty>12</Beauty>
+      <Color>323232FF</Color>
+      <ElementKind>Tu</ElementKind>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="1" />
+            <SalePrice Value="0" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="1" />
+            <SalePrice Value="0" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="100" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy1</li>
+          <li>Hard1</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>太虚</NamePrefix>
+          <StuffTexPath>res/mattex/mtl_marble</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <MaxHitPointsPerNum>100</MaxHitPointsPerNum>
+          <RateWhenBeMain>6</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.4</WorkSpeedCoefficientWhenBeMain>
+          <ColorWhenBeMain>323232FF</ColorWhenBeMain>
+          <CostMultiplier>1</CostMultiplier>
+          <BeautyWhenBeMain>12</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+          <PracticeEffectivenessWhenBeMain>0.6</PracticeEffectivenessWhenBeMain>
+          <WorktoMakeRate>1.6</WorktoMakeRate>
+          <WorktoBuildRate>1.6</WorktoBuildRate>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_LingStone" count="1" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>0</AddionLing>
+        <AddionRadius>1</AddionRadius>
+        <AddionFailing>1</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>Tu</Kind>
+        <Value>3</Value>
+        <Radius>2</Radius>
+        <Failing>1</Failing>
+        <FailRadius>1</FailRadius>
+      </Element>
+      <Light>
+        <Value>40</Value>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+        <Radius>3</Radius>
+        <Color>501E50FF</Color>
+      </Light>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_YinLingStoneLeftover" Parent="LeftoverMaterialBase">
+      <ThingName>阴石角料</ThingName>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Desc>混杂了碎阴石的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+      <Color>1E1E3CFF</Color>
+      <Flammability>
+        <BurningPoint>800</BurningPoint>
+      </Flammability>
+      <Item>
+        <BeMade>
+          <WorkToMake>20</WorkToMake>
+          <Quality>0</Quality>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="1" />
+          </CostItems>
+        </BeMade>
+        <BeMaterial>
+          <NamePrefix>阴石</NamePrefix>
+          <RateWhenBeMain>3</RateWhenBeMain>
+          <ColorWhenBeFloor>1E1E3CFF</ColorWhenBeFloor>
+          <ColorWhenBeRoof>323250FF</ColorWhenBeRoof>
+          <BurningPointWhenBeMain>800</BurningPointWhenBeMain>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>8</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+        </BeMaterial>
+      </Item>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_YangLingStoneLeftover" Parent="LeftoverMaterialBase">
+      <ThingName>阳石角料</ThingName>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Desc>混杂了碎阳石的建筑余料，可以用来铺地板或砌屋檐。</Desc>
+      <Color>FFFAFAFF</Color>
+      <Flammability>
+        <BurningPoint>800</BurningPoint>
+      </Flammability>
+      <Item>
+        <BeMade>
+          <WorkToMake>20</WorkToMake>
+          <Quality>0</Quality>
+          <CostItems>
+            <Item name="Item_YangLingStone" count="1" />
+          </CostItems>
+        </BeMade>
+        <BeMaterial>
+          <NamePrefix>阳石</NamePrefix>
+          <RateWhenBeMain>3</RateWhenBeMain>
+          <ColorWhenBeFloor>FFFAFAFF</ColorWhenBeFloor>
+          <ColorWhenBeRoof>FFF0F0FF</ColorWhenBeRoof>
+          <BurningPointWhenBeMain>800</BurningPointWhenBeMain>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>8</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+        </BeMaterial>
+      </Item>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_YinSi" Parent="ClothBase">
+      <TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+      <ThingName>凝阴丝</ThingName>
+      <Desc>灵气高度凝聚而成的结晶丝，拥有灵气，制作衣服可以有效阻隔灵气伤害。</Desc>
+      <Rate>8</Rate>
+      <Beauty>12</Beauty>
+      <Color>2F2B2BFF</Color>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Item Lable="Cloth">
+        <NotRandom>1</NotRandom>
+        <FuelMultiplier>1</FuelMultiplier>
+        <BeMaterial>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <ClothesColorID>9</ClothesColorID>
+          <CostMultiplier>1</CostMultiplier>
+          <NamePrefix>凝阴丝</NamePrefix>
+          <LingShieldWhenBeMain>0.1</LingShieldWhenBeMain>
+          <TemperatureMaxAddWhenBeMain>90</TemperatureMaxAddWhenBeMain>
+          <TemperatureMinAddWhenBeMain>-30</TemperatureMinAddWhenBeMain>
+          <ColorWhenBeMain>2F2B2BFF</ColorWhenBeMain>
+          <ColorWhenBeFloor>2F2F2FFF</ColorWhenBeFloor>
+          <MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+          <LingNumberRate>0.7</LingNumberRate>
+          <BurningPointWhenBeMain>0</BurningPointWhenBeMain>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <WorktoMakeRate>1</WorktoMakeRate>
+          <WorktoBuildRate>1</WorktoBuildRate>
+        </BeMaterial>
+        <Rot>
+          <RotSpeed>0</RotSpeed>
+          <DaysToRotStart>0</DaysToRotStart>
+          <TempMin>0</TempMin>
+          <LingMax>0</LingMax>
+        </Rot>
+        <PhysicalLables>
+          <li>GreatThing_Ling</li>
+          <li>Light1</li>
+          <li>Soft2</li>
+        </PhysicalLables>
+        <BeMade>
+          <WorkToMake>200</WorkToMake>
+          <CostItems>
+            <Item name="Item_LingCrystal" count="1" />
+            <Item name="Item_YinLingCrystal" count="1" />
+            <Item name="Item_Cotton" count="40" />
+          </CostItems>
+        </BeMade>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="8" />
+            <SalePrice Value="5" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="10" />
+            <SalePrice Value="6" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="100" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+      </Item>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+        <Radius>1</Radius>
+        <Failing>0</Failing>
+        <FailRadius>0</FailRadius>
+      </Element>
+      <Ling>
+        <AddionLing>0</AddionLing>
+        <AddionRadius>1</AddionRadius>
+        <AddionFailing>0</AddionFailing>
+        <AddionFailRadius>0</AddionFailRadius>
+        <Attenuation>0.03</Attenuation>
+        <Absorption>0.2</Absorption>
+        <Accommodate>0.65</Accommodate>
+      </Ling>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_YangSi" Parent="ClothBase">
+      <TexPath>res\Sprs\object\object_ApieceOfCloth</TexPath>
+      <ThingName>聚阳丝</ThingName>
+      <Desc>灵气高度凝聚而成的结晶丝，拥有灵气，制作衣服可以有效阻隔灵气伤害。</Desc>
+      <Rate>8</Rate>
+      <Beauty>12</Beauty>
+      <Color>FFFFFFFF</Color>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Item Lable="Cloth">
+        <NotRandom>1</NotRandom>
+        <FuelMultiplier>1</FuelMultiplier>
+        <BeMaterial>
+          <RateWhenBeMain>8</RateWhenBeMain>
+          <ClothesColorID>100</ClothesColorID>
+          <CostMultiplier>1</CostMultiplier>
+          <NamePrefix>聚阳丝</NamePrefix>
+          <LingShieldWhenBeMain>0.1</LingShieldWhenBeMain>
+          <TemperatureMaxAddWhenBeMain>45</TemperatureMaxAddWhenBeMain>
+          <TemperatureMinAddWhenBeMain>-60</TemperatureMinAddWhenBeMain>
+          <ColorWhenBeMain>FFFFFFFF</ColorWhenBeMain>
+          <ColorWhenBeFloor>F9F9F9FF</ColorWhenBeFloor>
+          <MaxHitPointsPerNum>20</MaxHitPointsPerNum>
+          <LingNumberRate>0.7</LingNumberRate>
+          <BurningPointWhenBeMain>0</BurningPointWhenBeMain>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <WorktoMakeRate>1</WorktoMakeRate>
+          <WorktoBuildRate>1</WorktoBuildRate>
+        </BeMaterial>
+        <Rot>
+          <RotSpeed>0</RotSpeed>
+          <DaysToRotStart>0</DaysToRotStart>
+          <TempMin>0</TempMin>
+          <LingMax>0</LingMax>
+        </Rot>
+        <PhysicalLables>
+          <li>GreatThing_Ling</li>
+          <li>Light1</li>
+          <li>Soft2</li>
+        </PhysicalLables>
+        <BeMade>
+          <WorkToMake>200</WorkToMake>
+          <CostItems>
+            <Item name="Item_LingCrystal" count="1" />
+            <Item name="Item_YangLingCrystal" count="1" />
+            <Item name="Item_Cotton" count="40" />
+          </CostItems>
+        </BeMade>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="8" />
+            <SalePrice Value="5" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="10" />
+            <SalePrice Value="6" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="100" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+      </Item>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+        <Radius>1</Radius>
+        <Failing>0</Failing>
+        <FailRadius>0</FailRadius>
+      </Element>
+      <Ling>
+        <AddionLing>0</AddionLing>
+        <AddionRadius>1</AddionRadius>
+        <AddionFailing>0</AddionFailing>
+        <AddionFailRadius>0</AddionFailRadius>
+        <Attenuation>0.03</Attenuation>
+        <Absorption>0.2</Absorption>
+        <Accommodate>0.65</Accommodate>
+      </Ling>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_WujiRock" Parent="RockBase">
+      <TexPath>res\Sprs\object\object_stone</TexPath>
+      <ThingName>无极石</ThingName>
+      <Desc>太虚门使用凝阴聚阳法冲虚之后的产物，失去了几乎全部灵气。质地坚硬，密度非常很高。是很好的建筑材料。</Desc>
+      <Color>3F4D5BFF</Color>
+      <Rate>9</Rate>
+      <Beauty>10</Beauty>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Item>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="800" />
+            <SalePrice Value="500" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="800" />
+            <SalePrice Value="600" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="1000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy2</li>
+          <li>Hard2</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>无极石</NamePrefix>
+          <CostMultiplier>0.4</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_xianzhu</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>9</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>5</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0.1</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>3F4D5BFF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>1000</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>5</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+          <PracticeEffectivenessWhenBeMain>1</PracticeEffectivenessWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="5" />
+            <Item name="Item_YangLingStone" count="5" />
+          </CostItems>
+          <WorkToMake>600</WorkToMake>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>0</AddionLing>
+        <AddionRadius>1</AddionRadius>
+        <AddionFailing>1</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_WujiRockBlock" Parent="RockBlockBase">
+      <ThingName>无极石砖</ThingName>
+      <TexPath>res\Sprs\object\object_brick</TexPath>
+      <Desc>无极石切割成的砖块，可以更有效的用来进行制作。密度非常高，质地坚硬。</Desc>
+      <Color>3F4D5BFF</Color>
+      <Beauty>9</Beauty>
+      <Rate>10</Rate>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Item>
+        <PhysicalLables>
+          <li>Heavy2</li>
+          <li>Hard2</li>
+        </PhysicalLables>
+        <Prices>
+          <TalkType>5</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="100" />
+            <SalePrice Value="50" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="100" />
+            <SalePrice Value="60" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="100" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <BeMaterial>
+          <NamePrefix>无极石</NamePrefix>
+          <CostMultiplier>0.4</CostMultiplier>
+          <StuffTexPath>res/mattex/mtl_xianzhu</StuffTexPath>
+          <StuffColorWeight>-1.35</StuffColorWeight>
+          <RateWhenBeMain>9</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>5</WorkSpeedCoefficientWhenBeMain>
+          <AttackSpeedWhenBeMain>0.1</AttackSpeedWhenBeMain>
+          <ColorWhenBeMain>3F4D5BFF</ColorWhenBeMain>
+          <MaxHitPointsPerNum>1000</MaxHitPointsPerNum>
+          <FlammabilityWhenBeMain>0</FlammabilityWhenBeMain>
+          <BeautyWhenBeMain>5</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+          <PracticeEffectivenessWhenBeMain>1</PracticeEffectivenessWhenBeMain>
+        </BeMaterial>
+        <BeMade>
+          <CostItems>
+            <Item name="Item_WujiRock" count="1" />
+          </CostItems>
+          <WorkToMake>150</WorkToMake>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>0</AddionLing>
+        <AddionRadius>1</AddionRadius>
+        <AddionFailing>1</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+    </ThingDef>
+  </List>
+</ThingDefs>

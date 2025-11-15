@@ -1,0 +1,230 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModifierDefs>
+  <List>
+    <Modifier Name="Dan_YinLingStone" Type="Normal">
+      <DisplayName>阴石共鸣</DisplayName>
+      <Desc>服用阴石，提高学习效率，提高心境，并使人更加耐热。</Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>4200</Duration>
+      <Display>1</Display>
+      <Sync>1</Sync>
+      <Properties>
+        <li Name="MindStateBaseValue" AddV="10" />
+        <li Name="IntelligenceSkillEXPConstant" AddP="0.1" />
+        <li Name="ComfyTMax" AddV="15" />
+        <li Name="ToleranceTMax" AddV="15" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Dan_YangLingStone" Type="Normal">
+      <DisplayName>阳石共鸣</DisplayName>
+      <Desc>服用阳石，提高修炼速度，提高精元转化率，并使人更加耐寒。</Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>4200</Duration>
+      <Display>1</Display>
+      <Sync>1</Sync>
+      <Properties>
+        <li Name="NutritionToJingYuanK" AddV="0.005" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.1" />
+        <li Name="ComfyTMin" AddV="-10" />
+        <li Name="ToleranceTMin" AddV="-10" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Dan_YinLingCrystal" Type="Normal">
+      <DisplayName>凝阴石</DisplayName>
+      <Desc></Desc>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="IntelligenceSkillEXPConstant" AddP="0.3" />
+        <li Name="MindStateBaseValue" AddV="20" />
+        <li Name="NpcLingMaxValue" BAddP="0.15" />
+        <li Name="ComfyTMax" AddV="30" />
+        <li Name="ToleranceTMax" AddV="30" />
+        <li Name="ComfyTMax" AddV="50" />
+        <li Name="ToleranceTMax" AddV="50" />
+        <li Name="ComfyTMin" AddV="50" />
+        <li Name="ToleranceTMin" AddV="50" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Dan_YangLingCrystal" Type="Normal">
+      <DisplayName>聚阳石</DisplayName>
+      <Desc></Desc>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.3" />
+        <li Name="NutritionToJingYuanK" AddV="0.02" />
+        <li Name="NpcLingMaxValue" BAddP="0.15" />
+        <li Name="ComfyTMin" AddV="-20" />
+        <li Name="ToleranceTMin" AddV="-20" />
+        <li Name="ComfyTMax" AddV="-50" />
+        <li Name="ToleranceTMax" AddV="-50" />
+        <li Name="ComfyTMin" AddV="-50" />
+        <li Name="ToleranceTMin" AddV="-50" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX01" Type="Normal">
+      <DisplayName>阴阳爆灵丹</DisplayName>
+      <Desc>阴阳冲虚，灵气恢复速度提高2500%。</Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>600</Duration>
+      <Sync>1</Sync>
+      <Display>1</Display>
+      <Properties>
+        <li Name="LingAbsorbSpeed" AddP="25" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX03" Type="Normal">
+      <DisplayName>地阴净心丹</DisplayName>
+      <Desc>提高心境，大幅降低心境波动。</Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>4200</Duration>
+      <Display>1</Display>
+      <Sync>1</Sync>
+      <Properties>
+        <li Name="MindStateBaseValue" AddV="30" />
+        <li Name="SpeedOfMindStateCoefficient" AddP="-0.8" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX04" Type="Normal">
+      <DisplayName>两仪金丹</DisplayName>
+      <Desc>大幅提高修炼速度。</Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>4200</Duration>
+      <Sync>1</Sync>
+      <Display>1</Display>
+      <Properties>
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="1" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX05" Type="Normal">
+      <DisplayName>聚阳饕餮</DisplayName>
+      <Desc>大幅强化饮气，高效炼化精元，精神振奋。</Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>8400</Duration>
+      <Display>1</Display>
+      <Sync>1</Sync>
+      <Properties>
+        <li Name="NutritionConsumeConstant" AddP="2" />
+        <li Name="FatigueConsumeConstant" AddP="-0.5" />
+        <li Name="NutritionWaterAutoRecover" AddV="2" />
+        <li Name="NutritionToJingYuanK" AddV="0.02" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX06" Type="Normal">
+      <DisplayName>凝阴灵智</DisplayName>
+      <Desc>悟性大增，思维敏捷，心境清明，破关坦途。</Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>8400</Duration>
+      <Sync>1</Sync>
+      <Display>1</Display>
+      <BaseFive>0,0,0,3,0</BaseFive>
+      <Properties>
+        <li Name="PracticeRateAddPFromDan" AddP="0.25" />
+        <li Name="IntelligenceSkillEXPConstant" AddP="0.5" />
+        <li Name="MindStateBaseValue" AddV="25" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX07" Type="Normal">
+      <DisplayName>聚阳造化神丹</DisplayName>
+      <Desc></Desc>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="MaxAge" AddV="99" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX09" Type="Normal">
+      <DisplayName>太极九魂九魄神丹</DisplayName>
+      <Desc>服用太极九魂九魄神丹，元神进入寂灭。</Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>5400</Duration>
+      <Display>1</Display>
+      <Sync>1</Sync>
+      <Damages>
+        <li Part="Brain" Damage="ZaoHuaYuLu_YuanShenJiMie" Value="0.8" />
+      </Damages>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX10" Type="Normal">
+      <DisplayName>太虚阴阳奠灵丹</DisplayName>
+      <Desc></Desc>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcLingMaxValue" BAddP="0.5" />
+        <li Name="NpcLingMaxValue" AddV="999999" />
+        <li Name="AbilityLvAddV" AddV="33" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX11" Type="Normal">
+      <DisplayName>无极五行仙魂丹</DisplayName>
+      <Desc>最大法宝数加一</Desc>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_FabaoNum" AddV="1" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX12" Type="Normal">
+      <DisplayName>九阳焚心丹</DisplayName>
+      <Desc></Desc>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Damages>
+        <li Part="Heart" Damage="Huo_VisceralBurn" Value="0.22" />
+        <li Part="Liver" Damage="Huo_VisceralBurn" Value="0.32" />
+        <li Part="Spleen" Damage="Huo_VisceralBurn" Value="0.36" />
+        <li Part="Lung" Damage="Huo_VisceralBurn" Value="0.23" />
+        <li Part="Kidney" Damage="Huo_VisceralBurn" Value="0.17" />
+      </Damages>
+      <Properties>
+        <li Name="NpcLingMaxValue" BAddP="0.1" />
+        <li Name="MindStateBaseValue" AddV="-15" />
+      </Properties>
+      <BaseFive>2,2,0,0,0</BaseFive>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX13" Type="Normal">
+      <DisplayName>九阴寂神丹</DisplayName>
+      <Desc>阴气过重，昏迷不醒。</Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>1800</Duration>
+      <Display>1</Display>
+      <Sync>1</Sync>
+      <EndModifier>Modifier_Dan_TX131</EndModifier>
+      <Damages>
+        <li Part="Brain" Damage="LostSoul" />
+      </Damages>
+      <Properties>
+        <li Name="MaxAge" AddV="-60" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX131" Type="Normal">
+      <DisplayName>九阴寂神丹（醒后）</DisplayName>
+      <Desc></Desc>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcLingMaxValue" BAddP="0.1" />
+      </Properties>
+      <BaseFive>0,0,2,2,0</BaseFive>
+    </Modifier>
+    <Modifier Name="Modifier_Dan_TX14" Type="Normal">
+      <DisplayName>欺天神丹</DisplayName>
+      <Desc>完全遮蔽自身存在，永无天劫之扰，也再无飞升可能。</Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Display>1</Display>
+      <Sync>1</Sync>
+      <SpecialFlags>
+        <li>FLAG_PRACTICEDIE</li>
+      </SpecialFlags>
+    </Modifier>
+  </List>
+</ModifierDefs>

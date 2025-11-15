@@ -1,0 +1,666 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+  <List>
+    <ThingDef Type="Building" Name="TXStoneMaker" Parent="ProductionBase">
+      <ThingName>太极石匠台</ThingName>
+      <Desc>用来将粗糙的石块打磨切割为石砖的工作台。</Desc>
+      <TexPath>res/Sprs/buildingnew/building_stonestation1a</TexPath>
+      <TexScale>0.8</TexScale>
+      <SelectAble>1</SelectAble>
+      <CastShadow>1</CastShadow>
+      <Beauty>5</Beauty>
+      <BlockLight>1</BlockLight>
+      <ShadowSize>
+        <x>1</x>
+        <y>0.2</y>
+      </ShadowSize>
+      <Collider>
+        <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+        <Data>
+		[1,1],
+		[7,1],
+		</Data>
+        <OffsetGroup>
+          <li>
+            <x>-0.57</x>
+            <y>-0.46</y>
+          </li>
+          <!--后-->
+          <li>
+            <x>-0.28</x>
+            <y>0.77</y>
+          </li>
+          <!--右-->
+          <li>
+            <x>0.61</x>
+            <y>1.05</y>
+          </li>
+          <!--前-->
+          <li>
+            <x>0.3</x>
+            <y>-0.27</y>
+          </li>
+          <!--左-->
+        </OffsetGroup>
+        <WorkOffset>
+          <li Index="0" X="0.96" Y="0" Ang="1" Dir="Down" />
+          <li Index="0" X="-0.24" Y="-0.36" Ang="1" Dir="Left" />
+          <li Index="0" X="-0.96" Y="0.2" Ang="1" Dir="Up" />
+          <li Index="0" X="0.2" Y="0.7" Ang="1" Dir="Right" />
+        </WorkOffset>
+      </Collider>
+      <Building>
+        <Orientation>F,B,R</Orientation>
+        <BePackage>1</BePackage>
+        <TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+        <CanMakeRoom>0</CanMakeRoom>
+        <WorkAnimation>CutStone</WorkAnimation>
+        <BeMade>
+          <WorkToMake>150</WorkToMake>
+          <Quality>0</Quality>
+          <StuffCategories>
+            <Stuff name="MetalBlock" />
+            <Stuff name="WoodBlock" />
+            <Stuff name="RockBlock" />
+          </StuffCategories>
+          <CostStuffCount>16</CostStuffCount>
+        </BeMade>
+        <SnowRenderData>
+          <x>2.95</x>
+          <y>3.8</y>
+          <z>1</z>
+        </SnowRenderData>
+        <SelectProduceStuff>0</SelectProduceStuff>
+        <ProduceKind>StoneWork</ProduceKind>
+        <Produces>
+          <Produce>
+            <ThingDef>Item_CLWoodBlock</ThingDef>
+            <Display>沉灵木砖</Display>
+            <Count>4</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TaixuBlock</ThingDef>
+            <Display>太虚石砖</Display>
+            <Count>4</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_WujiRockBlock</ThingDef>
+            <Display>无极石砖</Display>
+            <Count>10</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_LingStoneBlock</ThingDef>
+            <Display>灵石砖</Display>
+            <Count>8</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_LingCrystalBlock</ThingDef>
+            <Display>灵晶砖</Display>
+            <Count>8</Count>
+          </Produce>
+        </Produces>
+        <AutoUnLock>0</AutoUnLock>
+      </Building>
+    </ThingDef>
+    <ThingDef Type="Building" Name="TXWeaponMaker" Parent="ProductionBase">
+      <ThingName>太虚铸剑台</ThingName>
+      <Desc>用来将金属锭锻造为各种金属器具的工作台。</Desc>
+      <TexPath>res/Sprs/buildingnew/building_Smithstation1a</TexPath>
+      <TexScale>0.7</TexScale>
+      <BlockLight>1</BlockLight>
+      <SelectAble>1</SelectAble>
+      <CastShadow>1</CastShadow>
+      <Beauty>5</Beauty>
+      <Collider>
+        <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+        <Data>
+		[1,1],
+		[1,7],
+		</Data>
+        <OffsetGroup>
+          <li>
+            <x>0.5</x>
+            <y>-0.3</y>
+          </li>
+          <li>
+            <x>-0.42</x>
+            <y>-0.24</y>
+          </li>
+          <li>
+            <x>-0.46</x>
+            <y>1.17</y>
+          </li>
+          <li>
+            <x>0.41</x>
+            <y>0.71</y>
+          </li>
+        </OffsetGroup>
+        <WorkOffset>
+          <li Index="0" X="0" Y="0" Ang="1" Dir="Down" />
+          <li Index="0" X="-0.28" Y="0.4" Ang="1" Dir="Left" />
+          <li Index="0" X="0.34" Y="0.1" Ang="1" Dir="Up" />
+          <li Index="0" X="0.3" Y="-0.56" Ang="1" Dir="Right" />
+        </WorkOffset>
+      </Collider>
+      <Building>
+        <Orientation>F,B,R</Orientation>
+        <BePackage>1</BePackage>
+        <TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+        <CanMakeRoom>0</CanMakeRoom>
+        <WorkAnimation>iron</WorkAnimation>
+        <BeMade>
+          <WorkToMake>250</WorkToMake>
+          <Quality>0</Quality>
+          <StuffCategories>
+            <Stuff name="MetalBlock" />
+            <Stuff name="RockBlock" />
+          </StuffCategories>
+          <CostStuffCount>16</CostStuffCount>
+          <CostItems>
+            <Item name="Item_RoughWoodBlock" count="12" />
+          </CostItems>
+        </BeMade>
+        <SnowRenderData>
+          <x>3.03</x>
+          <y>4.04</y>
+          <z>1</z>
+        </SnowRenderData>
+        <Drive>
+          <StuffCategories>
+            <Stuff name="Wood" />
+            <Stuff name="WoodBlock" />
+          </StuffCategories>
+          <DrivingTexPath>res/Sprs/buildingnew/building_Smithstation1b</DrivingTexPath>
+          <CostStuffCount>15</CostStuffCount>
+          <Duration>0.05</Duration>
+          <DriveJustProdece>1</DriveJustProdece>
+          <RateMin>0</RateMin>
+          <RateMax>3</RateMax>
+        </Drive>
+        <ProducePriority>1</ProducePriority>
+        <ProduceKind>Smithing</ProduceKind>
+        <Produces>
+          <Produce>
+            <ThingDef>TX_Sword1</ThingDef>
+            <Display>太虚剑</Display>
+            <Count>1</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>TX_Sword2</ThingDef>
+            <Display>太极剑</Display>
+            <Count>1</Count>
+          </Produce>
+        </Produces>
+        <AutoUnLock>0</AutoUnLock>
+      </Building>
+      <Element>
+        <Kind>Huo</Kind>
+        <Value>8</Value>
+        <Radius>3</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>0</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Building" Name="TXFurnace" Parent="ProductionBase">
+      <ThingName>阴阳熔炉</ThingName>
+      <Desc>用来将金属矿物熔炼为金属锭的工作台。</Desc>
+      <TexPath>res/Sprs/buildingnew/building_forge1a</TexPath>
+      <TexScale>1</TexScale>
+      <BlockLight>1</BlockLight>
+      <SelectAble>1</SelectAble>
+      <CastShadow>1</CastShadow>
+      <Beauty>5</Beauty>
+      <Collider>
+        <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+        <Data>
+			[1,1],
+			[1,3],
+			[4,0],
+		</Data>
+        <OffsetGroup>
+          <li>
+            <x>0.5</x>
+            <y>-0.21</y>
+          </li>
+          <li>
+            <x>-0.5</x>
+            <y>-0.22</y>
+          </li>
+          <li>
+            <x>-0.5</x>
+            <y>0.78</y>
+          </li>
+          <li>
+            <x>0.5</x>
+            <y>0.84</y>
+          </li>
+        </OffsetGroup>
+        <WorkOffset>
+          <li Index="0" X="0.5" Y="0.5" Ang="1" Dir="Down" />
+          <li Index="0" X="0.34" Y="-1" Ang="1" Dir="Left" />
+          <li Index="0" X="-0.5" Y="-0.7" Ang="1" Dir="Up" />
+          <li Index="0" X="-0.34" Y="0.2" Ang="1" Dir="Right" />
+        </WorkOffset>
+      </Collider>
+      <Building>
+        <Orientation>F,B,R</Orientation>
+        <SelectProduceStuff>0</SelectProduceStuff>
+        <BePackage>1</BePackage>
+        <TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+        <CanMakeRoom>0</CanMakeRoom>
+        <WorkAnimation>assemble</WorkAnimation>
+        <BeMade>
+          <WorkToMake>250</WorkToMake>
+          <Quality>0</Quality>
+          <StuffCategories>
+            <Stuff name="RockBlock" />
+          </StuffCategories>
+          <CostStuffCount>16</CostStuffCount>
+        </BeMade>
+        <SnowRenderData>
+          <x>3.3</x>
+          <y>4.15</y>
+          <z>1</z>
+        </SnowRenderData>
+        <Drive>
+          <StuffCategories>
+            <Stuff name="Wood" />
+            <Stuff name="WoodBlock" />
+          </StuffCategories>
+          <DrivingTexPath>res/Sprs/buildingnew/building_forge1b</DrivingTexPath>
+          <CostStuffCount>15</CostStuffCount>
+          <Duration>0.05</Duration>
+          <DriveJustProdece>1</DriveJustProdece>
+          <RateMin>0</RateMin>
+          <RateMax>3</RateMax>
+        </Drive>
+        <ProduceKind>Smithing</ProduceKind>
+        <Produces>
+          <Produce>
+            <ThingDef>Item_TXWuBlock</ThingDef>
+            <Display>无极锭</Display>
+            <Count>50</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXJinBlock</ThingDef>
+            <Display>金雷锭</Display>
+            <Count>50</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXMuBlock</ThingDef>
+            <Display>枯木锭</Display>
+            <Count>50</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXShuiBlock</ThingDef>
+            <Display>冰莲锭</Display>
+            <Count>50</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXHuoBlock</ThingDef>
+            <Display>朱火锭</Display>
+            <Count>50</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXTuBlock</ThingDef>
+            <Display>秘土锭</Display>
+            <Count>50</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_CLWood</ThingDef>
+            <Display>沉灵木</Display>
+            <Count>10</Count>
+          </Produce>
+        </Produces>
+        <AutoUnLock>0</AutoUnLock>
+      </Building>
+      <Element>
+        <Kind>Huo</Kind>
+        <Value>8</Value>
+        <Radius>3</Radius>
+        <Failing>0.8</Failing>
+        <FailRadius>0</FailRadius>
+      </Element>
+    </ThingDef>
+    <ThingDef Type="Building" Name="TXTextileTable" Parent="ProductionBase">
+      <ThingName>灵晶丝纺织机</ThingName>
+      <Desc>用来将纤维纺织成布匹毛料的工作台。</Desc>
+      <TexPath>res/Sprs/buildingnew/building_spinplace1a</TexPath>
+      <TexScale>0.75</TexScale>
+      <BlockLight>1</BlockLight>
+      <SelectAble>1</SelectAble>
+      <CastShadow>1</CastShadow>
+      <Beauty>5</Beauty>
+      <Collider>
+        <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+        <Data>
+			[1,1],
+			[3,1],
+			[4,0],
+		</Data>
+        <OffsetGroup>
+          <li>
+            <x>-0.5</x>
+            <y>-0.14</y>
+          </li>
+          <li>
+            <x>-0.5</x>
+            <y>0.91</y>
+          </li>
+          <li>
+            <x>0.52</x>
+            <y>0.91</y>
+          </li>
+          <li>
+            <x>0.59</x>
+            <y>0</y>
+          </li>
+        </OffsetGroup>
+        <WorkOffset>
+          <li Index="0" X="0.5" Y="0.55" Ang="1" Dir="Down" />
+          <li Index="0" X="0.3" Y="-0.7" Ang="1" Dir="Left" />
+          <li Index="0" X="-0.5" Y="-0.6" Ang="1" Dir="Up" />
+          <li Index="0" X="-0.3" Y="0.55" Ang="1" Dir="Right" />
+        </WorkOffset>
+      </Collider>
+      <Building>
+        <Orientation>F,B,R</Orientation>
+        <BePackage>1</BePackage>
+        <TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+        <CanMakeRoom>0</CanMakeRoom>
+        <WorkAnimation>weave</WorkAnimation>
+        <BeMade>
+          <WorkToMake>150</WorkToMake>
+          <Quality>0</Quality>
+          <StuffCategories>
+            <Stuff name="MetalBlock" />
+            <Stuff name="WoodBlock" />
+            <Stuff name="RockBlock" />
+          </StuffCategories>
+          <CostStuffCount>12</CostStuffCount>
+          <CostItems>
+            <Item name="Item_RoughWoodBlock" count="14" />
+          </CostItems>
+        </BeMade>
+        <SnowRenderData>
+          <x>3.2</x>
+          <y>3.91</y>
+          <z>1</z>
+        </SnowRenderData>
+        <ProduceKind>Sew</ProduceKind>
+        <Produces>
+          <Produce>
+            <ThingDef>Item_YinSi</ThingDef>
+            <Display>凝阴丝</Display>
+            <Count>200</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_YangSi</ThingDef>
+            <Display>聚阳丝</Display>
+            <Count>200</Count>
+          </Produce>
+        </Produces>
+        <AutoUnLock>0</AutoUnLock>
+      </Building>
+    </ThingDef>
+    <ThingDef Type="Building" Name="TXTailorTable" Parent="ProductionBase">
+      <ThingName>法衣缝纫桌</ThingName>
+      <Desc>用来制作衣物的工作台。</Desc>
+      <TexPath>res/Sprs/buildingnew/building_tailorplace1a</TexPath>
+      <TexScale>0.67</TexScale>
+      <BlockLight>1</BlockLight>
+      <SelectAble>1</SelectAble>
+      <CastShadow>1</CastShadow>
+      <Beauty>5</Beauty>
+      <Collider>
+        <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+        <Data>
+			[1,3],
+			[0,4],
+		</Data>
+        <OffsetGroup>
+          <li>
+            <x>0.45</x>
+            <y>0.55</y>
+          </li>
+          <li>
+            <x>0.33</x>
+            <y>-0.17</y>
+          </li>
+          <li>
+            <x>-0.52</x>
+            <y>0.68</y>
+          </li>
+          <li>
+            <x>-0.31</x>
+            <y>0.85</y>
+          </li>
+        </OffsetGroup>
+        <WorkOffset>
+          <li Index="0" X="-0.55" Y="0.55" Ang="1" Dir="Down" />
+          <li Index="0" X="0.3" Y="0.4" Ang="1" Dir="Left" />
+          <li Index="0" X="0.5" Y="-0.55" Ang="1" Dir="Up" />
+          <li Index="0" X="-0.25" Y="-0.55" Ang="1" Dir="Right" />
+        </WorkOffset>
+      </Collider>
+      <Building>
+        <WorkTexPath>res/Sprs/buildingnew/building_tailorplace1b</WorkTexPath>
+        <Orientation>F,B,R</Orientation>
+        <BePackage>1</BePackage>
+        <TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+        <CanMakeRoom>0</CanMakeRoom>
+        <WorkAnimation>assemble</WorkAnimation>
+        <BeMade>
+          <WorkToMake>150</WorkToMake>
+          <Quality>0</Quality>
+          <StuffCategories>
+            <Stuff name="MetalBlock" />
+            <Stuff name="WoodBlock" />
+            <Stuff name="RockBlock" />
+          </StuffCategories>
+          <CostStuffCount>10</CostStuffCount>
+          <CostItems>
+            <Item name="Item_RoughWoodBlock" count="12" />
+          </CostItems>
+        </BeMade>
+        <SnowRenderData>
+          <x>2.74</x>
+          <y>3.87</y>
+          <z>1</z>
+        </SnowRenderData>
+        <ProducePriority>1</ProducePriority>
+        <ProduceKind>Sew</ProduceKind>
+        <Produces>
+          <Produce>
+            <ThingDef>Item_TXClothes01</ThingDef>
+            <Display>无极法袍</Display>
+            <Count>1</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXTrousers01</ThingDef>
+            <Display>无极法裳</Display>
+            <Count>1</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXClothes02</ThingDef>
+            <Display>太极羽衣</Display>
+            <Count>1</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXTrousers02</ThingDef>
+            <Display>太极下裳</Display>
+            <Count>1</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXClothes03</ThingDef>
+            <Display>太极战袍</Display>
+            <Count>1</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXTrousers03</ThingDef>
+            <Display>太极战裤</Display>
+            <Count>1</Count>
+          </Produce>
+        </Produces>
+        <AutoUnLock>0</AutoUnLock>
+      </Building>
+    </ThingDef>
+    <ThingDef Type="Building" Name="TXHandWorkTable" Parent="ProductionBase">
+      <ThingName>太极手工桌</ThingName>
+      <Desc>进行简单的手工用品制造的工作台。</Desc>
+      <TexScale>0.7</TexScale>
+      <TexPath>res/Sprs/buildingnew/building_ManufacturingStation1a</TexPath>
+      <BlockLight>1</BlockLight>
+      <SelectAble>1</SelectAble>
+      <CastShadow>1</CastShadow>
+      <Beauty>5</Beauty>
+      <Collider>
+        <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+        <Data>
+			[3,1],
+			[4,0],
+		</Data>
+        <OffsetGroup>
+          <li>
+            <x>-0.5</x>
+            <y>0.75</y>
+          </li>
+          <li>
+            <x>0.35</x>
+            <y>0.81</y>
+          </li>
+          <li>
+            <x>0.5</x>
+            <y>0.75</y>
+          </li>
+          <li>
+            <x>-0.3</x>
+            <y>-0.04</y>
+          </li>
+        </OffsetGroup>
+        <WorkOffset>
+          <li Index="0" X="0.55" Y="0.76" Ang="1" Dir="Down" />
+          <li Index="0" X="0.67" Y="-0.6" Ang="1" Dir="Left" />
+          <li Index="0" X="-0.46" Y="-0.4" Ang="1" Dir="Up" />
+          <li Index="0" X="-0.5" Y="0.4" Ang="1" Dir="Right" />
+        </WorkOffset>
+      </Collider>
+      <Building>
+        <BePackage>1</BePackage>
+        <TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+        <CanMakeRoom>0</CanMakeRoom>
+        <WorkAnimation>produce</WorkAnimation>
+        <WorkTexPath>res/Sprs/buildingnew/building_ManufacturingStation1b</WorkTexPath>
+        <Orientation>F,B,R</Orientation>
+        <BeMade>
+          <WorkToMake>150</WorkToMake>
+          <Quality>0</Quality>
+          <StuffCategories>
+            <Stuff name="MetalBlock" />
+            <Stuff name="WoodBlock" />
+            <Stuff name="RockBlock" />
+          </StuffCategories>
+          <CostStuffCount>8</CostStuffCount>
+        </BeMade>
+        <SnowRenderData>
+          <x>3.13</x>
+          <y>3.9</y>
+          <z>1</z>
+        </SnowRenderData>
+        <ProducePriority>1</ProducePriority>
+        <ProduceKind>Handwork</ProduceKind>
+        <Produces>
+          <!--		<Produce>
+				<ThingDef>Item_WoodPike</ThingDef>
+				<Display>木矛</Display>
+				<Count>1</Count>
+			</Produce>-->
+          <Produce>
+            <ThingDef>Item_YangLingStoneLeftover</ThingDef>
+            <Display>阳石角料</Display>
+            <Count>100</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_YinLingStoneLeftover</ThingDef>
+            <Display>阴石角料</Display>
+            <Count>100</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXBracelet</ThingDef>
+            <Display>太极镯</Display>
+            <Count>1</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXAcupuncture</ThingDef>
+            <Display>阴阳针</Display>
+            <Count>1</Count>
+          </Produce>
+          <Produce>
+            <ThingDef>Item_TXPerfumeBag</ThingDef>
+            <Display>沁灵香囊</Display>
+            <Count>3</Count>
+          </Produce>
+        </Produces>
+        <AutoUnLock>0</AutoUnLock>
+      </Building>
+    </ThingDef>
+    <ThingDef Type="Building" Name="Building_TXMagicCushion" Parent="FurnitureBase">
+      <ThingName>太极法座</ThingName>
+      <Desc>太虚剑宗弟子修炼专用的法座，通过阴阳冲虚能聚集更多灵气。</Desc>
+      <Tags>
+        <Tag Name="Sitable" Level="1" />
+        <Tag Name="Practice" Level="15" />
+      </Tags>
+      <TexScale>0.9</TexScale>
+      <TexPath>res/Sprs/buildingnew/building_fazuo01</TexPath>
+      <SelectAble>1</SelectAble>
+      <CastShadow>0</CastShadow>
+      <BlockLight>0</BlockLight>
+      <Collider>
+        <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
+        <Data>
+		[6],
+		</Data>
+        <WorkOffset>
+          <li Index="0" X="0" Y="0" Ang="181" />
+        </WorkOffset>
+      </Collider>
+      <Building>
+        <OwnerCount>1</OwnerCount>
+        <TerrainAffordanceNeeded>Ground</TerrainAffordanceNeeded>
+        <BePackage>1</BePackage>
+        <WorkTexPath>res/Sprs/buildingnew/building_fazuo01</WorkTexPath>
+        <PracticeEffectiveness>1</PracticeEffectiveness>
+        <BeMade>
+          <WorkToMake>50</WorkToMake>
+          <Quality>0</Quality>
+          <StuffCategories>
+            <Stuff name="MetalBlock" />
+            <Stuff name="WoodBlock" />
+            <Stuff name="RockBlock" />
+          </StuffCategories>
+          <CostStuffCount>20</CostStuffCount>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="5" />
+            <Item name="Item_YangLingStone" count="5" />
+          </CostItems>
+        </BeMade>
+        <SnowRenderData>
+          <x>2.4</x>
+          <y>3.55</y>
+          <z>1</z>
+        </SnowRenderData>
+        <AutoUnLock>0</AutoUnLock>
+      </Building>
+      <Ling>
+        <AddionLing>150</AddionLing>
+        <AddionRadius>1</AddionRadius>
+        <AddionFailing>1</AddionFailing>
+        <AddionFailRadius>0</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+    </ThingDef>
+  </List>
+</ThingDefs>

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Magics>
+  <List>
+    <Magic Name="TXMagic01">
+      <DisplayName>仙家洞天</DisplayName>
+      <Desc>太虚剑宗神妙之极的大神通，消耗百万灵气经过长时间施法召唤仙界之灵气。</Desc>
+      <Icon>res\Sprs\ui\icon_chifeng01</Icon>
+      <Kind>Good</Kind>
+      <Ani>shentong1</Ani>
+      <Param1>60</Param1>
+      <!--施法时间-->
+      <sParam1>ZuShiBiHu</sParam1>
+      <!--天气名称，可以用逗号隔开-->
+      <CostLing>1000000</CostLing>
+      <CostGong>0</CostGong>
+      <CostAge>0</CostAge>
+      <CMD>AbsorbGong_15</CMD>
+    </Magic>
+    <Magic Name="TXMagic02" Type="Class">
+      <DisplayName>无极灵池</DisplayName>
+      <ItemCost>
+        <li name="Item_YinLingStone" count="10" />
+        <li name="Item_YangLingStone" count="10" />
+      </ItemCost>
+      <Desc>以阴阳秘法大量冲虚产生灵气，将一片区域化为灵水。</Desc>
+      <CMD>dasda</CMD>
+      <Icon>res\Sprs\ui\icon_youcui01</Icon>
+      <SelectMode>Ellipse</SelectMode>
+      <TargetAni>dazuo</TargetAni>
+      <sParam1>LingWater</sParam1>
+      <Param1>65</Param1>
+      <SelectTarget>InLight</SelectTarget>
+      <ClassName>Magic_BuildSea</ClassName>
+      <MaxArea>64</MaxArea>
+      <TargetDesc>请选择一块空地</TargetDesc>
+      <CostLing>100000</CostLing>
+    </Magic>
+    <Magic Name="TXMagic03" Type="Class">
+      <DisplayName>无极灵土</DisplayName>
+      <ItemCost>
+        <li name="Item_YinLingStone" count="10" />
+        <li name="Item_YangLingStone" count="10" />
+      </ItemCost>
+      <Desc>以阴阳秘法大量冲虚产生灵气，将一片区域化为灵土。</Desc>
+      <CMD>dasda</CMD>
+      <Icon>res\Sprs\ui\icon_youcui01</Icon>
+      <SelectMode>Ellipse</SelectMode>
+      <TargetAni>dazuo</TargetAni>
+      <sParam1>LingSoil</sParam1>
+      <Param1>49</Param1>
+      <SelectTarget>InLight</SelectTarget>
+      <ClassName>Magic_BuildSea</ClassName>
+      <MaxArea>64</MaxArea>
+      <TargetDesc>请选择一块空地</TargetDesc>
+      <CostLing>100000</CostLing>
+    </Magic>
+    <Magic Name="TXMagic04">
+      <DisplayName>无极定镜</DisplayName>
+      <Desc>太虚剑宗秘传之无极定镜。在无极定镜中时间会非常之快，修炼效率极高。同时也消耗大量寿元。</Desc>
+      <Icon>res\Sprs\ui\icon_ruding01</Icon>
+      <Param1>100</Param1>
+      <!--修炼速度加成-->
+      <Param2>0.02</Param2>
+      <!--寿命消耗/秒-->
+      <Param3>25</Param3>
+      <!--精元消耗倍率-->
+      <CostLing>0</CostLing>
+      <CostAge>0</CostAge>
+      <Penalty>0</Penalty>
+      <ScoreBase>0</ScoreBase>
+      <ScoreGood>0</ScoreGood>
+      <ScoreBad>0</ScoreBad>
+      <CMD>ClosedDoor</CMD>
+      <SelectType>CloseDoor</SelectType>
+    </Magic>
+    <Magic Name="TXMagic05">
+      <DisplayName>遮天搜魂大法</DisplayName>
+      <Desc>对弥留中的角色使用，有一定的概率得到他的功法秘籍或者其他知识。在凶煞之地施展会提高获取信息的概率。</Desc>
+      <Icon>res\Sprs\ui\icon_souhun01</Icon>
+      <Param1>10</Param1>
+      <!--所需时间-->
+      <CostLing>3000</CostLing>
+      <Penalty>0</Penalty>
+      <ScoreBase>-20</ScoreBase>
+      <ScoreBad>20</ScoreBad>
+      <CheckFlag>FLAG_SeachSoul</CheckFlag>
+      <CMD>SeachSoul</CMD>
+      <SelectType>DieStay</SelectType>
+    </Magic>
+    <Magic Name="TXMagic06">
+      <DisplayName>炼魂祭剑魔功</DisplayName>
+      <Desc>将一名无修为的同类身体的一部分斩掉来祭祀自己的宝剑，能从祭剑过程中获取大量参悟。目标天资越高，祭剑效果越好。由于过程中未用仙术，不会招致天谴。</Desc>
+      <Icon>res\Sprs\ui\icon_xianji01</Icon>
+      <Kind>Bad</Kind>
+      <Ani>shentong2</Ani>
+      <Param1>4.2</Param1>
+      <!--施法时间-->
+      <Param2>0</Param2>
+      <!--获得修为系数 获得的修为值 = （目标体质 + 目标悟性 + 目标魅力） * X * 魔神享用内脏数* 当前境界所需修为-->
+      <Param3>1000</Param3>
+      <!--获得参悟系数 获得的修为值 = （目标体质 + 目标悟性 + 目标魅力） * X * 魔神享用内脏数-->
+      <CostLing>0</CostLing>
+      <Penalty>0</Penalty>
+      <ScoreBase>-50</ScoreBase>
+      <ScoreBad>50</ScoreBad>
+      <CMD>AbsorbGong_7</CMD>
+      <SelectType>NormalNpcRace</SelectType>
+    </Magic>
+  </List>
+</Magics>

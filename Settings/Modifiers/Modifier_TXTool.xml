@@ -1,0 +1,214 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ModifierDefs>
+  <List>
+    <Modifier Name="Modifier_TXSword0" Type="Normal">
+      <DisplayName>无极神剑</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Sync>1</Sync>
+      <Skills>
+        <li Name="Fabao" LevelOver="5" />
+        <li Name="Fight" LevelOver="10" />
+      </Skills>
+      <Properties>
+        <li Name="LingAbsorbSpeed" AddP="9.9" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_TXSword1" Type="Normal">
+      <DisplayName>太虚剑</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Sync>1</Sync>
+      <Skills>
+        <li Name="Fight" LevelOver="3" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Modifier_TXSword2" Type="Normal">
+      <DisplayName>太极剑</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Sync>1</Sync>
+      <Skills>
+        <li Name="Fabao" LevelOver="2" />
+        <li Name="Fight" LevelOver="5" />
+      </Skills>
+      <Properties>
+        <li Name="LingAbsorbSpeed" AddP="3.3" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_TXClothes01" Type="Normal">
+      <DisplayName>高级法衣</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Sync>1</Sync>
+      <Properties>
+        <li Name="NpcFight_ShieldConversionRate" AddV="0.4" />
+        <li Name="NpcFight_ShieldResistanceToJin" AddV="0.1" />
+        <li Name="NpcFight_ShieldResistanceToMu" AddV="0.1"></li>
+        <li Name="NpcFight_ShieldResistanceToShui" AddV="0.1" />
+        <li Name="NpcFight_ShieldResistanceToHuo" AddV="0.1" />
+        <li Name="NpcFight_ShieldResistanceToTu" AddV="0.1" />
+        <li Name="AbilityLvAddV" AddV="-15" />
+        <li Name="ComfyTMax" AddV="250" />
+        <li Name="ToleranceTMax" AddV="250" />
+        <li Name="ComfyTMin" AddV="-120" />
+        <li Name="ToleranceTMin" AddV="-120" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_TXClothes02" Type="Normal">
+      <DisplayName>制式法衣</DisplayName>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Sync>1</Sync>
+      <Properties>
+        <li Name="NpcFight_ShieldConversionRate" AddV="0.25" />
+        <li Name="AbilityLvAddV" AddV="-15" />
+        <li Name="ComfyTMax" AddV="200" />
+        <li Name="ToleranceTMax" AddV="200" />
+        <li Name="ComfyTMin" AddV="-100" />
+        <li Name="ToleranceTMin" AddV="-100" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_TXZhuo" Type="Normal">
+      <DisplayName>太极镯</DisplayName>
+      <Desc></Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Sync>1</Sync>
+      <BaseFive>0,0,2,0,0</BaseFive>
+      <Properties>
+        <li Name="SocialContactLevelAddValue" AddV="3" />
+        <li Name="NpcFight_ShieldConversionRate" AddV="0.2" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Modifier_TXZhenjiu" Type="Normal">
+      <DisplayName>阴阳针灸</DisplayName>
+      <Desc></Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Sync>1</Sync>
+      <Properties>
+        <li Name="TreatSuccessChance" AddP="2" />
+        <li Name="TreatmentExpectQuality" AddP="2" />
+        <li Name="TreatmentRealQualityPercentMin" AddP="2" />
+        <li Name="TreatmentRealQualityPercentMax" AddP="2" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Item_TXPerfumeBag" Type="Normal">
+      <DisplayName>沁灵香囊</DisplayName>
+      <Desc></Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Sync>1</Sync>
+      <Properties>
+        <li Name="MindStateBaseValue" AddV="20" />
+        <li Name="SocialInclination" AddV="0.5" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.25" />
+        <li Name="RecoveryPower" AddP="0.5" />
+      </Properties>
+    </Modifier>
+    <Modifier Name="Dan_TJZhong_Equip" Type="Normal">
+      <DisplayName>太极八卦种（装备）</DisplayName>
+      <Desc></Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="MindStateBaseValue" AddV="30" />
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.5" />
+        <li Name="NutritionToJingYuanK" AddV="0.01" />
+        <li Name="IntelligenceSkillEXPConstant" AddP="0.5" />
+        <li Name="RecoveryPower" AddP="2" />
+      </Properties>
+      <BaseFive>1,1,1,1,1</BaseFive>
+      <Skills>
+        <li Name="FightSkill" LevelOver="3" />
+        <li Name="Barrier" LevelOver="3" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Dan_TJZhong" Type="Normal">
+      <DisplayName>太极八卦种（服用）</DisplayName>
+      <Desc></Desc>
+      <MaxStack>0</MaxStack>
+      <Duration>-1</Duration>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcLingMaxValue" BAddV="500" />
+        <li Name="NutritionToJingYuanK" AddV="0.03" />
+      </Properties>
+      <BaseFive>2,2,2,2,2</BaseFive>
+    </Modifier>
+    <Modifier Name="Modifier_TXFazhentu" Type="Normal">
+      <DisplayName>太虚无极阵图</DisplayName>
+      <Desc></Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Sync>1</Sync>
+      <Display>0</Display>
+      <Properties>
+        <li Name="NpcFight_ZhenEnginePower" AddV="8" />
+        <li Name="NpcFight_ZhenKeyPointNum" AddV="1" />
+      </Properties>
+      <Skills>
+        <li Name="Zhen" LevelOver="20" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Modifier_TXTiangong" Type="Normal">
+      <DisplayName>太虚铸剑真解录</DisplayName>
+      <Desc></Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Sync>1</Sync>
+      <Display>0</Display>
+      <Skills>
+        <li Name="Manual" LevelOver="20" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Modifier_YinThunderAir" Type="Normal">
+      <DisplayName>太阴威能</DisplayName>
+      <Desc></Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Sync>1</Sync>
+      <Display>0</Display>
+      <Properties>
+        <li Name="IntelligenceSkillEXPConstant" AddP="0.25" />
+        <li Name="MindStateBaseValue" AddV="20" />
+        <li Name="ComfyTMax" AddV="200" />
+        <li Name="ToleranceTMax" AddV="200" />
+        <li Name="ComfyTMin" AddV="200" />
+        <li Name="ToleranceTMin" AddV="200" />
+      </Properties>
+      <Skills>
+        <li Name="FightSkill" LevelOver="2" />
+      </Skills>
+    </Modifier>
+    <Modifier Name="Modifier_YangThunderAir" Type="Normal">
+      <DisplayName>极阳威能</DisplayName>
+      <Desc></Desc>
+      <MaxStack>1</MaxStack>
+      <Duration>-1</Duration>
+      <Sync>1</Sync>
+      <Display>0</Display>
+      <Properties>
+        <li Name="DeepPracticeSpeedSpecialCoefficient" AddP="0.25" />
+        <li Name="RecoveryPower" AddP="1" />
+        <li Name="ComfyTMax" AddV="-200" />
+        <li Name="ToleranceTMax" AddV="-200" />
+        <li Name="ComfyTMin" AddV="-200" />
+        <li Name="ToleranceTMin" AddV="-200" />
+      </Properties>
+      <Skills>
+        <li Name="Barrier" LevelOver="2" />
+      </Skills>
+    </Modifier>
+  </List>
+</ModifierDefs>

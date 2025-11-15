@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Gongs>
+  <List>
+    <Gong Name="Gong_TX1">
+      <DisplayName>太虚无极剑诀</DisplayName>
+      <Desc>上古宗派太虚剑宗真传之仙法，融合了阴阳之道与无极剑法，极擅争斗。从古到今常世均谈五行，只有太虚剑宗研习阴阳之道，其中还辅以炼丹，炼器之法。此法极重杀伐之道，威力绝伦，修行过程天劫不断，飞升天劫更是强劲异常。其中有学龙虎五剑意，战杀诛三真意，三元术法，神灭斩，均称绝技。</Desc>
+      <SelectDesc>虽此法通古博今，全擅全能，却也对修行者要求极为苛刻，且天劫众多。若有任一缺陷不能及，则绝无成仙之机遇。是否要选择修习此功法？</SelectDesc>
+      <FiveBaseNeed>7, 7, 6, 9, 6</FiveBaseNeed>
+      <SkillSetName></SkillSetName>
+      <ElementKind>None</ElementKind>
+      <Skill>
+        <!--chumo jiangdao guanding ciqi kaiguang cuiti bihu-->
+        <li>chumo</li>
+        <li>jiangdao</li>
+        <li>ciqi</li>
+      </Skill>
+      <Stages>
+        <Stage Name="Stage1" Level="3">
+          <DisplayName>习剑境</DisplayName>
+          <Desc>太虚无极剑诀第一层境界，宁神锻体，苦练剑术，练就剑之体魄。</Desc>
+          <Value>2500</Value>
+          <Necks>
+            <Neck Location="0.1" Kind="Chance">
+              <DisplayName>宁心</DisplayName>
+              <Desc>静坐一整天，尝试稳定心气。[color=#D06508]\n此瓶颈很难突破。[/color]</Desc>
+              <CostTime>600</CostTime>
+              <SuccessChange>0.2</SuccessChange>
+            </Neck>
+            <Neck Location="0.7" Kind="Chance">
+              <DisplayName>锻体</DisplayName>
+              <Desc>磨炼身体，修成钢铁之躯。[color=#D06508]\n此瓶颈根骨越低，越难突破。[/color]</Desc>
+              <CostTime>150</CostTime>
+              <SuccessChange>Physique_1_1_10</SuccessChange>
+              <FailedChangeAdd>0.6</FailedChangeAdd>
+            </Neck>
+            <Neck Location="1" Kind="Chance">
+              <DisplayName>剑之体</DisplayName>
+              <Desc>以练气期修为承受住一整颗灵晶之灵气，练就剑之体魄。</Desc>
+              <CostTime>300</CostTime>
+              <ItemCost>
+                <Item name="Item_LingCrystal" />
+              </ItemCost>
+              <SuccessChange>1</SuccessChange>
+              <AddModifier>Gong_Qi</AddModifier>
+            </Neck>
+          </Necks>
+        </Stage>
+        <Stage Name="Stage2" Level="4">
+          <DisplayName>御剑境</DisplayName>
+          <Desc>太虚无极剑诀第二层境界，修习御器之法，于自然之中感悟技巧。将御剑与习剑心法合二为一。</Desc>
+          <Value>3000</Value>
+          <Necks>
+            <Neck Location="0.1" Kind="Explore">
+              <DisplayName>历世修习</DisplayName>
+              <Desc>持剑出游，与常世自然之中领悟御器技巧。</Desc>
+              <ExploreValue>3</ExploreValue>
+            </Neck>
+            <Neck Location="0.8" Kind="Chance">
+              <DisplayName>祭剑</DisplayName>
+              <Desc>斩杀妖兽以证剑之修为，以妖灵之血祭剑。</Desc>
+              <CostTime>100</CostTime>
+              <SuccessChange>1</SuccessChange>
+              <ItemCost>
+                <Item name="Item_MonsterBlood" />
+              </ItemCost>
+            </Neck>
+            <Neck Location="1" Kind="Chance">
+              <DisplayName>双剑合一</DisplayName>
+              <Desc>将感悟自然御剑之法与本我修习之剑法两种不同的心法合二为一。领悟太虚御剑之法根本。[color=#D06508]\n此瓶颈需反复尝试，方能逐步突破。\n此瓶颈神识越低，越难突破。\n突破失败可能会受伤。[/color]</Desc>
+              <CostTime>300</CostTime>
+              <SuccessChange>Physique_1_1_10</SuccessChange>
+              <FailedChangeAdd>Physique_1_1_10</FailedChangeAdd>
+              <Damages>
+                <li PartKind="Meridian" Name="ElixirFieldShock" Rate="1" />
+              </Damages>
+            </Neck>
+          </Necks>
+        </Stage>
+        <Stage Name="Stage6" Level="6">
+          <DisplayName>凝剑境</DisplayName>
+          <Desc>太虚无极剑诀第三层境界，结合阴阳之道与合一剑法，感悟剑道，结成剑之金丹。</Desc>
+          <Value>5000</Value>
+          <Necks>
+            <Neck Location="0.1" Kind="Chance">
+              <DisplayName>阴阳调和</DisplayName>
+              <Desc>借助阴石阳石各一个，使身体中的阴阳归于最佳平衡。[color=#D06508]\n此瓶颈悟性越低，越难突破。[/color]</Desc>
+              <CostTime>600</CostTime>
+              <SuccessChange>Intelligence_1_5_25</SuccessChange>
+              <FailedChangeAdd>Intelligence_1_5_25</FailedChangeAdd>
+              <ItemCost>
+                <Item name="Item_YinLingStone" />
+                <Item name="Item_YangLingStone" />
+              </ItemCost>
+            </Neck>
+            <Neck Location="0.9" Kind="Chance">
+              <DisplayName>阴阳冲虚</DisplayName>
+              <Desc>服用阴阳爆灵丹感受阴阳冲虚带来的彭拜灵气，为结丹做好准备。</Desc>
+              <CostTime>300</CostTime>
+              <SuccessChange>1</SuccessChange>
+              <ItemCost>
+                <Item name="Item_Dan_TX01" />
+              </ItemCost>
+            </Neck>
+            <Neck Location="1" Kind="Gold">
+              <DisplayName>剑之丹</DisplayName>
+              <Desc>凝聚剑心，结成金丹，奠定道基。</Desc>
+              <AddModifier>Gong_Gold</AddModifier>
+            </Neck>
+          </Necks>
+        </Stage>
+        <Stage Name="Stage4" Level="7">
+          <DisplayName>锻剑境</DisplayName>
+          <Desc>太虚无极剑诀第四层境界，金丹已成，作为剑修去追寻绝世好剑，回归凡人，从最基础的锻铁重新感悟。最终将心神锻成一把无形之剑。</Desc>
+          <Value>50000</Value>
+          <Necks>
+            <Neck Location="0.1" Kind="Work">
+              <DisplayName>重习锻剑</DisplayName>
+              <Desc>回归凡人，从最基础的开始重习锻剑。</Desc>
+            </Neck>
+            <Neck Location="1" Kind="Chance">
+              <DisplayName>心之剑</DisplayName>
+              <Desc>总结归纳凡修所见所得所感，借助太极剑胎，将心神，锻成剑。[color=#D06508]此瓶颈神识越低，越难突破。[/color]</Desc>
+              <CostTime>600</CostTime>
+              <SuccessChange>Perception_2_10_1</SuccessChange>
+              <FailedChangeAdd>Perception_2_10_1</FailedChangeAdd>
+              <ItemCost>
+                <Item name="Item_TXSwordLT" />
+              </ItemCost>
+            </Neck>
+          </Necks>
+        </Stage>
+        <Stage Name="Stage5" Level="9">
+          <DisplayName>心剑境</DisplayName>
+          <Desc>太虚无极剑诀第五层境界，如今心剑已成，需要刻苦修行，冥想阴阳之道，从心剑中催生剑之元婴。</Desc>
+          <Value>300000</Value>
+          <Necks>
+            <Neck Location="0.1" Kind="Thunder">
+              <DisplayName>杀剑劫</DisplayName>
+              <Desc>杀伐心剑已成，触犯天罚，招致天劫</Desc>
+              <ThunderValue>50000</ThunderValue>
+              <NeckCountdown>4900</NeckCountdown>
+            </Neck>
+            <Neck Location="0.2" Kind="Chance">
+              <DisplayName>拜剑神</DisplayName>
+              <Desc>杀剑劫已过，于定镜中寻找剑神，求得剑神庇佑。[color=#D06508]\n此瓶颈机缘越低，越难突破。[/color]</Desc>
+              <CostTime>300</CostTime>
+              <SuccessChange>Luck_1_1_10</SuccessChange>
+              <FailedChangeAdd>Luck_1_1_10</FailedChangeAdd>
+              <ResourceCost>
+                <Resource kind="Age" value="9" />
+              </ResourceCost>
+            </Neck>
+            <Neck Location="0.9" Kind="Chance">
+              <DisplayName>定太极</DisplayName>
+              <Desc>运起凝阴聚阳之术，调和阴阳，达到最高平衡，为催生元婴创造环境。[color=#D06508]\n此瓶颈突破花费的时间很长，但突破必然成功。[/color]</Desc>
+              <CostTime>1800</CostTime>
+              <SuccessChange>1</SuccessChange>
+            </Neck>
+            <Neck Location="1" Kind="Chance">
+              <DisplayName>剑之元神</DisplayName>
+              <Desc>苦修冥想，感悟剑道，孕育元婴。[color=#D06508]此瓶颈悟性越低，越难突破。[/color]</Desc>
+              <CostTime>600</CostTime>
+              <SuccessChange>Intelligence_1_1_3</SuccessChange>
+              <FailedChangeAdd>Intelligence_1_1_3</FailedChangeAdd>
+              <AddModifier>Gong_Thunder1</AddModifier>
+            </Neck>
+          </Necks>
+        </Stage>
+        <Stage Name="Stage6" Level="10">
+          <DisplayName>劫剑境</DisplayName>
+          <Desc>太虚无极剑诀第六层境界，最为凶险的一镜，新生的剑之元神引来三道天劫，若无真剑修在身，必将神形俱灭。</Desc>
+          <Value>3000000</Value>
+          <Necks>
+            <Neck Location="0.1" Kind="FuPractice">
+              <DisplayName>决死心符</DisplayName>
+              <Desc>以决死之心，画剑之心符，迎接三道威能天劫。[color=#D06508]\n突破此瓶颈将直面三道天劫，若无真剑修在身，必将神形俱灭。[/color]</Desc>
+              <CostTime>1</CostTime>
+              <SuccessChange>0.25</SuccessChange>
+            </Neck>
+            <Neck Location="0.4" Kind="Thunder">
+              <DisplayName>弑神劫</DisplayName>
+              <Desc>第一劫，过此天劫，你可弑神。</Desc>
+              <ThunderValue>250000</ThunderValue>
+              <NeckCountdown>600</NeckCountdown>
+            </Neck>
+            <Neck Location="0.7" Kind="Thunder">
+              <DisplayName>诛仙劫</DisplayName>
+              <Desc>第二劫，过此天劫，你可诛仙。</Desc>
+              <ThunderValue>400000</ThunderValue>
+              <NeckCountdown>600</NeckCountdown>
+            </Neck>
+            <Neck Location="1" Kind="Thunder">
+              <DisplayName>逆天劫</DisplayName>
+              <Desc>第三劫，过此天劫，你已逆天。</Desc>
+              <ThunderValue>600000</ThunderValue>
+              <NeckCountdown>600</NeckCountdown>
+              <AddModifier>Gong_Thunder2</AddModifier>
+            </Neck>
+          </Necks>
+        </Stage>
+        <Stage Name="Stage7" Level="12">
+          <DisplayName>极剑境</DisplayName>
+          <Desc>太虚无极剑诀第七层境界，三劫已过，剑神已无人可挡。突破自我，追寻剑之极道，飞升成仙。</Desc>
+          <Value>7000000</Value>
+          <Necks>
+            <Neck Location="0.05" Kind="FuPractice">
+              <DisplayName>剑神心符</DisplayName>
+              <Desc>三道天劫已过，剑神赐予心符一张。</Desc>
+              <CostTime>1</CostTime>
+              <SuccessChange>0.25</SuccessChange>
+            </Neck>
+            <Neck Location="0.25" Kind="Chance">
+              <DisplayName>太极身形</DisplayName>
+              <Desc>从阴阳威能中吸取九天九夜之灵气，修成太极之身。[color=#D06508]\n此瓶颈突破花费的时间很长，但突破必然成功。[/color]</Desc>
+              <CostTime>5400</CostTime>
+              <SuccessChange>1</SuccessChange>
+              <ItemCost>
+                <Item name="Item_YinThunderAir" />
+                <Item name="Item_YangThunderAir" />
+              </ItemCost>
+            </Neck>
+            <Neck Location="1" Kind="God">
+              <DisplayName>两仪极剑</DisplayName>
+              <Desc>最终天劫已到，渡此劫则飞升成仙，反之将粉身碎骨。[color=#D06508]\n此天劫威力极强，请做好准备。[/color]</Desc>
+              <ThunderValue>1250000</ThunderValue>
+              <NeckCountdown>5400</NeckCountdown>
+              <AddModifier>Gong_Thunder3</AddModifier>
+            </Neck>
+          </Necks>
+        </Stage>
+      </Stages>
+    </Gong>
+  </List>
+</Gongs>

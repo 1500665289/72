@@ -1,0 +1,181 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+  <List>
+    <ThingDef Type="Item" Name="Item_TXClothes01" Parent="ClothesBase">
+      <ThingName>无极法袍</ThingName>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <MaxStack>1</MaxStack>
+      <Desc>太虚剑宗最高等级的法衣，可大量防御灵气伤害，并抵抗一部分五行伤害。</Desc>
+      <Item Lable="Clothes">
+        <BeMade>
+          <WorkToMake>1800</WorkToMake>
+          <Quality>100</Quality>
+          <ArtDesc></ArtDesc>
+          <StuffCategories>
+            <Stuff name="Leather" />
+            <Stuff name="Cloth" />
+          </StuffCategories>
+          <CostStuffCount>100</CostStuffCount>
+          <CostItems>
+            <Item name="Item_TXJinBlock" count="2" />
+            <Item name="Item_TXMuBlock" count="2" />
+            <Item name="Item_TXShuiBlock" count="2" />
+            <Item name="Item_TXHuoBlock" count="2" />
+            <Item name="Item_TXTuBlock" count="2" />
+            <Item name="Item_SoulPearl" count="1" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>8</ModelID>
+          <ToolModifier>Modifier_TXClothes01</ToolModifier>
+        </Equip>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <MaxHitPoints>300</MaxHitPoints>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXTrousers01" Parent="TrousersBase">
+      <ThingName>无极法裳</ThingName>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <MaxStack>1</MaxStack>
+      <Desc>太虚剑宗最高等级的法衣，可大量防御灵气伤害，并抵抗一部分五行伤害。</Desc>
+      <Item Lable="Trousers">
+        <BeMade>
+          <WorkToMake>1800</WorkToMake>
+          <Quality>100</Quality>
+          <ArtDesc></ArtDesc>
+          <StuffCategories>
+            <Stuff name="Leather" />
+            <Stuff name="Cloth" />
+          </StuffCategories>
+          <CostStuffCount>100</CostStuffCount>
+          <CostItems>
+            <Item name="Item_TXJinBlock" count="2" />
+            <Item name="Item_TXMuBlock" count="2" />
+            <Item name="Item_TXShuiBlock" count="2" />
+            <Item name="Item_TXHuoBlock" count="2" />
+            <Item name="Item_TXTuBlock" count="2" />
+            <Item name="Item_SoulPearl" count="1" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>8</ModelID>
+          <ToolModifier>Modifier_TXClothes01</ToolModifier>
+        </Equip>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <MaxHitPoints>300</MaxHitPoints>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXClothes02" Parent="ClothesBase">
+      <ThingName>太极羽衣</ThingName>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <MaxStack>1</MaxStack>
+      <Desc>太虚剑宗女性制式服装，可大量防御灵气伤害。</Desc>
+      <Item Lable="Clothes">
+        <BeMade>
+          <WorkToMake>600</WorkToMake>
+          <Quality>100</Quality>
+          <ArtDesc></ArtDesc>
+          <StuffCategories>
+            <Stuff name="Leather" />
+            <Stuff name="Cloth" />
+          </StuffCategories>
+          <CostStuffCount>60</CostStuffCount>
+          <CostItems>
+            <Item name="Item_TXWuBlock" count="3" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>6</ModelID>
+          <NeedSex>Female</NeedSex>
+          <ToolModifier>Modifier_TXClothes02</ToolModifier>
+        </Equip>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <MaxHitPoints>300</MaxHitPoints>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXTrousers02" Parent="TrousersBase">
+      <ThingName>太极下裳</ThingName>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <MaxStack>1</MaxStack>
+      <Desc>太虚剑宗女性制式服装，可大量防御灵气伤害。</Desc>
+      <Item Lable="Trousers">
+        <BeMade>
+          <WorkToMake>600</WorkToMake>
+          <Quality>100</Quality>
+          <ArtDesc></ArtDesc>
+          <StuffCategories>
+            <Stuff name="Leather" />
+            <Stuff name="Cloth" />
+          </StuffCategories>
+          <CostStuffCount>60</CostStuffCount>
+          <CostItems>
+            <Item name="Item_TXWuBlock" count="3" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>9</ModelID>
+          <NeedSex>Female</NeedSex>
+          <ToolModifier>Modifier_TXClothes02</ToolModifier>
+        </Equip>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <MaxHitPoints>300</MaxHitPoints>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXClothes03" Parent="ClothesBase">
+      <ThingName>太极战袍</ThingName>
+      <TexPath>res/Sprs/object/object_huafushangyi01</TexPath>
+      <MaxStack>1</MaxStack>
+      <Desc>太虚剑宗男性制式服装，可大量防御灵气伤害。</Desc>
+      <Item Lable="Clothes">
+        <BeMade>
+          <WorkToMake>600</WorkToMake>
+          <Quality>100</Quality>
+          <ArtDesc></ArtDesc>
+          <StuffCategories>
+            <Stuff name="Leather" />
+            <Stuff name="Cloth" />
+          </StuffCategories>
+          <CostStuffCount>60</CostStuffCount>
+          <CostItems>
+            <Item name="Item_TXWuBlock" count="3" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>8</ModelID>
+          <NeedSex>Male</NeedSex>
+          <ToolModifier>Modifier_TXClothes02</ToolModifier>
+        </Equip>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <MaxHitPoints>300</MaxHitPoints>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_TXTrousers03" Parent="TrousersBase">
+      <ThingName>太极战裤</ThingName>
+      <TexPath>res/Sprs/object/object_huafukuzi01</TexPath>
+      <MaxStack>1</MaxStack>
+      <Desc>太虚剑宗男性制式服装，可大量防御灵气伤害。</Desc>
+      <Item Lable="Trousers">
+        <BeMade>
+          <WorkToMake>600</WorkToMake>
+          <Quality>100</Quality>
+          <ArtDesc></ArtDesc>
+          <StuffCategories>
+            <Stuff name="Leather" />
+            <Stuff name="Cloth" />
+          </StuffCategories>
+          <CostStuffCount>60</CostStuffCount>
+          <CostItems>
+            <Item name="Item_TXWuBlock" count="3" />
+          </CostItems>
+        </BeMade>
+        <Equip>
+          <ModelID>8</ModelID>
+          <NeedSex>Male</NeedSex>
+          <ToolModifier>Modifier_TXClothes02</ToolModifier>
+        </Equip>
+        <NotRandom>1</NotRandom>
+      </Item>
+      <MaxHitPoints>300</MaxHitPoints>
+    </ThingDef>
+  </List>
+</ThingDefs>

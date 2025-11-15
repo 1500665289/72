@@ -1,0 +1,588 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ThingDefs>
+  <List>
+    <ThingDef Type="Item" Name="Item_YinLingStone" Parent="RockBase">
+      <TexPath>res\Sprs\object\object_lingshi01</TexPath>
+      <ThingName>阴石</ThingName>
+      <Desc>太虚门使用灵石以阴阳解离法剥离出来的阴属性灵石。直接服用恢复3000点灵气，并在七天内提高学习效率，提高心境，并使人更加耐热。</Desc>
+      <Rate>7</Rate>
+      <Beauty>15</Beauty>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Color>323264FF</Color>
+      <Item Lable="LingStone">
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="20" />
+            <SalePrice Value="15" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="20" />
+            <SalePrice Value="15" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="50" />
+            <SalePrice Value="50" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy1</li>
+          <li>Hard1</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>阴石</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <RateWhenBeMain>7</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <Elixir>
+          <Ling>3000</Ling>
+          <Modifier>Dan_YinLingStone</Modifier>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>150</WorkToMake>
+          <CostItems>
+            <Item name="Item_LingStone" count="100" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>0</AddionLing>
+        <AddionRadius>1</AddionRadius>
+        <AddionFailing>1</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+        <Radius>1</Radius>
+        <Failing>0</Failing>
+        <FailRadius>0</FailRadius>
+      </Element>
+      <Light>
+        <Value>30</Value>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+        <Radius>2</Radius>
+        <Color>141496FF</Color>
+      </Light>
+      <Heat>
+        <Value>-15</Value>
+        <Radius>3</Radius>
+        <RoomValue>-30</RoomValue>
+        <Failing>0.4</Failing>
+        <FailRadius>1</FailRadius>
+      </Heat>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_YangLingStone" Parent="RockBase">
+      <TexPath>res\Sprs\object\object_lingshi01</TexPath>
+      <ThingName>阳石</ThingName>
+      <Desc>太虚门使用灵石以阴阳解离法剥离出来的阳属性灵石。直接服用恢复3000点灵气，并在七天内提高修炼速度，提高精元转化率，并使人更加耐寒。</Desc>
+      <Rate>7</Rate>
+      <Beauty>15</Beauty>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Color>FFA6A6FF</Color>
+      <Item Lable="LingStone">
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="20" />
+            <SalePrice Value="15" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="20" />
+            <SalePrice Value="15" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="50" />
+            <SalePrice Value="50" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy1</li>
+          <li>Hard1</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>阳石</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <RateWhenBeMain>7</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.5</WorkSpeedCoefficientWhenBeMain>
+          <BeautyWhenBeMain>15</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <Elixir>
+          <Ling>3000</Ling>
+          <Modifier>Dan_YangLingStone</Modifier>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>150</WorkToMake>
+          <CostItems>
+            <Item name="Item_LingStone" count="100" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>0</AddionLing>
+        <AddionRadius>1</AddionRadius>
+        <AddionFailing>1</AddionFailing>
+        <AddionFailRadius>1</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+        <Radius>1</Radius>
+        <Failing>0</Failing>
+        <FailRadius>0</FailRadius>
+      </Element>
+      <Light>
+        <Value>30</Value>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+        <Radius>2</Radius>
+        <Color>963232FF</Color>
+      </Light>
+      <Heat>
+        <Value>15</Value>
+        <Radius>3</Radius>
+        <RoomValue>30</RoomValue>
+        <Failing>0.4</Failing>
+        <FailRadius>1</FailRadius>
+      </Heat>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_YinLingCrystal" Parent="RockBase">
+      <TexPath>res\Sprs\object\object_lingjing01</TexPath>
+      <ThingName>凝阴石</ThingName>
+      <Desc>使用太虚门所传凝阴法纯化阴石得到的结晶体，服用可以强化阴气。永久提高心境，提高学习速度，并从根本上提高灵气上限。一生只可服用一次。</Desc>
+      <Rate>9</Rate>
+      <Beauty>25</Beauty>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Color>1E1E5AFF</Color>
+      <Item Lable="LingStone">
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="500" />
+            <SalePrice Value="500" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="1000" />
+            <SalePrice Value="800" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="1500" />
+            <SalePrice Value="1000" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy1</li>
+          <li>Hard2</li>
+          <li>GreatThing_Ling</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>凝阴</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <RateWhenBeMain>9</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+          <BeautyWhenBeMain>25</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <Elixir>
+          <Ling>50000</Ling>
+          <Modifier>Dan_YinLingCrystal</Modifier>
+          <Fesistance>0</Fesistance>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>300</WorkToMake>
+          <CostItems>
+            <Item name="Item_YinLingStone" count="9" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>50</AddionLing>
+        <AddionRadius>3</AddionRadius>
+        <AddionFailing>0.8</AddionFailing>
+        <AddionFailRadius>2</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+        <Radius>1</Radius>
+        <Failing>0</Failing>
+        <FailRadius>0</FailRadius>
+      </Element>
+      <Light>
+        <Value>50</Value>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+        <Radius>3</Radius>
+        <Color>3232C8FF</Color>
+      </Light>
+      <Heat>
+        <Value>-75</Value>
+        <Radius>3</Radius>
+        <RoomValue>-120</RoomValue>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+      </Heat>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_YangLingCrystal" Parent="RockBase">
+      <TexPath>res\Sprs\object\object_lingjing01</TexPath>
+      <ThingName>聚阳石</ThingName>
+      <Desc>使用太虚门所传聚阳法纯化阳石得到的结晶体，服用可以强化阳气。永久提高修炼速度，提高精元转化率，并从根本上提高灵气上限。一生只可服用一次。</Desc>
+      <Rate>9</Rate>
+      <Beauty>25</Beauty>
+      <NoElementKind>1</NoElementKind>
+      <ElementKind>None</ElementKind>
+      <Color>FF9494FF</Color>
+      <Item Lable="LingStone">
+        <Prices>
+          <TalkType>2</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="500" />
+            <SalePrice Value="500" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="1000" />
+            <SalePrice Value="800" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="1500" />
+            <SalePrice Value="1000" />
+          </li>
+        </Prices>
+        <PhysicalLables>
+          <li>Heavy1</li>
+          <li>Hard2</li>
+          <li>GreatThing_Ling</li>
+        </PhysicalLables>
+        <BeMaterial>
+          <NamePrefix>聚阳</NamePrefix>
+          <CostMultiplier>1</CostMultiplier>
+          <RateWhenBeMain>9</RateWhenBeMain>
+          <WorkSpeedCoefficientWhenBeMain>1.8</WorkSpeedCoefficientWhenBeMain>
+          <BeautyWhenBeMain>25</BeautyWhenBeMain>
+          <ElementPowerWhenBeMain>0</ElementPowerWhenBeMain>
+        </BeMaterial>
+        <Elixir>
+          <Ling>50000</Ling>
+          <Modifier>Dan_YangLingCrystal</Modifier>
+          <Fesistance>0</Fesistance>
+        </Elixir>
+        <BeMade>
+          <WorkToMake>300</WorkToMake>
+          <CostItems>
+            <Item name="Item_YangLingStone" count="9" />
+          </CostItems>
+        </BeMade>
+      </Item>
+      <Ling>
+        <AddionLing>50</AddionLing>
+        <AddionRadius>3</AddionRadius>
+        <AddionFailing>0.8</AddionFailing>
+        <AddionFailRadius>2</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+        <Radius>1</Radius>
+        <Failing>0</Failing>
+        <FailRadius>0</FailRadius>
+      </Element>
+      <Light>
+        <Value>50</Value>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+        <Radius>3</Radius>
+        <Color>E15050FF</Color>
+      </Light>
+      <Heat>
+        <Value>75</Value>
+        <Radius>3</Radius>
+        <RoomValue>120</RoomValue>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+      </Heat>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_YinThunderAir" Parent="DrugBase">
+      <ThingName>太阴威能</ThingName>
+      <MaxStack>1</MaxStack>
+      <TexPath>res\Sprs\object\object_tianjiezhixi</TexPath>
+      <Desc>太虚门无极真法中记载的太阴至宝。据说需要聚集九颗凝阴石中的纯阴灵力耗费大量时间才能炼成一颗。内含磅礴的灵气。随身携带阴气将会过剩。</Desc>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Rate>12</Rate>
+      <Beauty>100</Beauty>
+      <ElementKind>None</ElementKind>
+      <Color>141450FF</Color>
+      <Flammability>
+        <Flammability>0</Flammability>
+        <FlameSpawnThingDef>0</FlameSpawnThingDef>
+        <FlameSpawnChance>0</FlameSpawnChance>
+      </Flammability>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="5000" FriendPoint="5" />
+            <SalePrice Value="5000" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="10000" />
+            <SalePrice Value="5000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="2500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <FabaoSuffix>太阴劫</FabaoSuffix>
+        <PhysicalLables>
+          <li>GreatThing_Attack</li>
+          <li>GreatThing_Ling</li>
+          <li>Sharp</li>
+        </PhysicalLables>
+        <Rot>
+          <RotSpeed>0</RotSpeed>
+          <DaysToRotStart>0</DaysToRotStart>
+          <TempMin>0</TempMin>
+          <LingMax>0</LingMax>
+        </Rot>
+        <BeMade>
+          <WorkToMake>1800</WorkToMake>
+          <CostItems>
+            <Item name="Item_YinLingCrystal" count="9" />
+          </CostItems>
+        </BeMade>
+        <Elixir>
+          <Ling>1000000</Ling>
+        </Elixir>
+        <Equip>
+          <ToolModifier>Modifier_YinThunderAir</ToolModifier>
+        </Equip>
+      </Item>
+      <Ling>
+        <AddionLing>150</AddionLing>
+        <AddionRadius>5</AddionRadius>
+        <AddionFailing>0.8</AddionFailing>
+        <AddionFailRadius>2</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+        <Radius>1</Radius>
+        <Failing>1</Failing>
+        <FailRadius>1</FailRadius>
+      </Element>
+      <Heat>
+        <Value>-200</Value>
+        <Radius>5</Radius>
+        <RoomValue>-600</RoomValue>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+      </Heat>
+      <Light>
+        <Value>75</Value>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+        <Radius>3</Radius>
+        <Color>3232C8FF</Color>
+      </Light>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_YangThunderAir" Parent="DrugBase">
+      <ThingName>极阳威能</ThingName>
+      <MaxStack>1</MaxStack>
+      <TexPath>res\Sprs\object\object_tianjiezhixi</TexPath>
+      <Desc>太虚门无极真法中记载的极阳至宝。据说需要聚集九颗聚阳石中的纯阳灵力耗费大量时间才能炼成一颗。内含磅礴的灵气。随身携带阳气将会过剩。</Desc>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Rate>12</Rate>
+      <Beauty>100</Beauty>
+      <ElementKind>None</ElementKind>
+      <Color>FF6464FF</Color>
+      <Flammability>
+        <Flammability>0</Flammability>
+        <FlameSpawnThingDef>0</FlameSpawnThingDef>
+        <FlameSpawnChance>0</FlameSpawnChance>
+      </Flammability>
+      <Item Lable="Dan">
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="5000" FriendPoint="5" />
+            <SalePrice Value="5000" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="10000" />
+            <SalePrice Value="5000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="2500" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+        <FabaoSuffix>极阳劫</FabaoSuffix>
+        <PhysicalLables>
+          <li>GreatThing_Attack</li>
+          <li>GreatThing_Ling</li>
+          <li>Sharp</li>
+        </PhysicalLables>
+        <Rot>
+          <RotSpeed>0</RotSpeed>
+          <DaysToRotStart>0</DaysToRotStart>
+          <TempMin>0</TempMin>
+          <LingMax>0</LingMax>
+        </Rot>
+        <BeMade>
+          <WorkToMake>1800</WorkToMake>
+          <CostItems>
+            <Item name="Item_YangLingCrystal" count="9" />
+          </CostItems>
+        </BeMade>
+        <Elixir>
+          <Ling>1000000</Ling>
+        </Elixir>
+        <Equip>
+          <ToolModifier>Modifier_YangThunderAir</ToolModifier>
+        </Equip>
+      </Item>
+      <Ling>
+        <AddionLing>150</AddionLing>
+        <AddionRadius>5</AddionRadius>
+        <AddionFailing>0.8</AddionFailing>
+        <AddionFailRadius>2</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+        <Radius>1</Radius>
+        <Failing>1</Failing>
+        <FailRadius>1</FailRadius>
+      </Element>
+      <Heat>
+        <Value>200</Value>
+        <Radius>5</Radius>
+        <RoomValue>600</RoomValue>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+      </Heat>
+      <Light>
+        <Value>75</Value>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+        <Radius>3</Radius>
+        <Color>E15050FF</Color>
+      </Light>
+    </ThingDef>
+    <ThingDef Type="Item" Name="Item_WujinHeart" Parent="DrugBase">
+      <ThingName>无极剑心</ThingName>
+      <MaxStack>1</MaxStack>
+      <TexPath>res\Sprs\object\object_tianjiezhixi</TexPath>
+      <Desc>太虚剑宗一切功法秘籍的本源。</Desc>
+      <MaxHitPoints>1000</MaxHitPoints>
+      <Rate>12</Rate>
+      <Beauty>100</Beauty>
+      <ElementKind>None</ElementKind>
+      <Color>FFFFFFFF</Color>
+      <Flammability>
+        <Flammability>0</Flammability>
+        <FlameSpawnThingDef>0</FlameSpawnThingDef>
+        <FlameSpawnChance>0</FlameSpawnChance>
+      </Flammability>
+      <Item Lable="Dan">
+        <PhysicalLables>
+          <li>GreatThing_Attack</li>
+          <li>GreatThing_Ling</li>
+          <li>Sharp</li>
+        </PhysicalLables>
+        <Rot>
+          <RotSpeed>0</RotSpeed>
+          <DaysToRotStart>0</DaysToRotStart>
+          <TempMin>0</TempMin>
+          <LingMax>0</LingMax>
+        </Rot>
+        <BeMade>
+          <WorkToMake>72000</WorkToMake>
+          <CostItems>
+            <Item name="Item_YinThunderAir" count="9" />
+            <Item name="Item_YangThunderAir" count="9" />
+          </CostItems>
+        </BeMade>
+        <Elixir>
+          <Ling>1000000</Ling>
+        </Elixir>
+        <BeMaterial>
+          <NamePrefix></NamePrefix>
+          <RateWhenBeMain>12</RateWhenBeMain>
+          <BeautyWhenBeMain>100</BeautyWhenBeMain>
+        </BeMaterial>
+        <Prices>
+          <TalkType>1</TalkType>
+          <BaseCount>0</BaseCount>
+          <li PriceTag="School">
+            <BuyPrice Value="50000" FriendPoint="5" />
+            <SalePrice Value="50000" />
+          </li>
+          <li PriceTag="Trade">
+            <BuyPrice Value="100000" />
+            <SalePrice Value="50000" />
+          </li>
+          <li PriceTag="Auction">
+            <BuyPrice Value="25000" />
+            <SalePrice Value="0" />
+          </li>
+        </Prices>
+      </Item>
+      <Ling>
+        <AddionLing>150</AddionLing>
+        <AddionRadius>5</AddionRadius>
+        <AddionFailing>0.8</AddionFailing>
+        <AddionFailRadius>2</AddionFailRadius>
+        <Attenuation>0</Attenuation>
+        <Absorption>0</Absorption>
+        <Accommodate>0</Accommodate>
+      </Ling>
+      <Element>
+        <Kind>None</Kind>
+        <Value>0</Value>
+        <Radius>1</Radius>
+        <Failing>1</Failing>
+        <FailRadius>1</FailRadius>
+      </Element>
+      <Light>
+        <Value>150</Value>
+        <Failing>0.6</Failing>
+        <FailRadius>1</FailRadius>
+        <Radius>3</Radius>
+        <Color>FFFFFFFF</Color>
+      </Light>
+    </ThingDef>
+  </List>
+</ThingDefs>
