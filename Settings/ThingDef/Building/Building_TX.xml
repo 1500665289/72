@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <ThingDefs>
   <List>
     <ThingDef Type="Building" Name="TXStoneMaker" Parent="ProductionBase">
@@ -17,9 +17,9 @@
       <Collider>
         <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
         <Data>
-		[1,1],
-		[7,1],
-		</Data>
+          [1,1],
+          [7,1]
+        </Data>
         <OffsetGroup>
           <li>
             <x>-0.57</x>
@@ -114,9 +114,9 @@
       <Collider>
         <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
         <Data>
-		[1,1],
-		[1,7],
-		</Data>
+          [1,1],
+          [1,7]
+        </Data>
         <OffsetGroup>
           <li>
             <x>0.5</x>
@@ -213,10 +213,10 @@
       <Collider>
         <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
         <Data>
-			[1,1],
-			[1,3],
-			[4,0],
-		</Data>
+          [1,1],
+          [1,3],
+          [4,0]
+        </Data>
         <OffsetGroup>
           <li>
             <x>0.5</x>
@@ -334,10 +334,10 @@
       <Collider>
         <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
         <Data>
-			[1,1],
-			[3,1],
-			[4,0],
-		</Data>
+          [1,1],
+          [3,1],
+          [4,0]
+        </Data>
         <OffsetGroup>
           <li>
             <x>-0.5</x>
@@ -415,9 +415,9 @@
       <Collider>
         <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
         <Data>
-			[1,3],
-			[0,4],
-		</Data>
+          [1,3],
+          [0,4]
+        </Data>
         <OffsetGroup>
           <li>
             <x>0.45</x>
@@ -517,9 +517,9 @@
       <Collider>
         <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
         <Data>
-			[3,1],
-			[4,0],
-		</Data>
+          [3,1],
+          [4,0]
+        </Data>
         <OffsetGroup>
           <li>
             <x>-0.5</x>
@@ -570,11 +570,11 @@
         <ProducePriority>1</ProducePriority>
         <ProduceKind>Handwork</ProduceKind>
         <Produces>
-          <!--		<Produce>
-				<ThingDef>Item_WoodPike</ThingDef>
-				<Display>木矛</Display>
-				<Count>1</Count>
-			</Produce>-->
+          <!--<Produce>
+            <ThingDef>Item_WoodPike</ThingDef>
+            <Display>木矛</Display>
+            <Count>1</Count>
+          </Produce>-->
           <Produce>
             <ThingDef>Item_YangLingStoneLeftover</ThingDef>
             <Display>阳石角料</Display>
@@ -619,8 +619,8 @@
       <Collider>
         <!--(0Empty 1Base)+(2EmptyCenter 4EmptyWorkspace)-->
         <Data>
-		[6],
-		</Data>
+          [6]
+        </Data>
         <WorkOffset>
           <li Index="0" X="0" Y="0" Ang="181" />
         </WorkOffset>
